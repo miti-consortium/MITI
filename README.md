@@ -8,5 +8,38 @@ The YAML files in this repository provide detailed specification of the standard
 * `filename` - A valid [POSIX-portable](https://www.ibm.com/docs/en/zos/2.2.0?topic=locales-posix-portable-file-name-character-set) filename
 * `date` - A date specified in the [ISO 8601 standard](https://www.iso.org/iso-8601-date-and-time-format.html) YYYY-MM-DD
 * `doi` - A valid [DOI identifier](https://www.doi.org/)
+* `rrid` - A valid [Research Resource Identifier](https://scicrunch.org/resources)
 
-Valid values are specified as sets of predefined keywords for `string` and as [`min`, `max`] intervals for `integer` and `float` variables, where both `min` and `max` can be optionally omitted to define open intervals.
+Valid values are specified as sets of predefined keywords for `string` and as [`min`, `max`] intervals for `integer` and `float` variables, where both `min` and `max` can be optionally omitted to define one-sided intervals.
+
+## Example: 1
+
+The following YAML block defines a required attribute `Tumor tissue type` that relates to collection and processing of biospecimens. A valid field must be specified as a character string, using one of the pre-defined keywords: Primary Tumor, Local Tumor Recurrence, etc.
+
+``` yaml
+Tumor tissue type:
+  description: Text that describes the kind of disease present in the tumor specimen
+    as related to a specific time point.
+  category: Collection and Processing
+  type: string
+  valid-values:
+  - Primary Tumor
+  - Local Tumor Recurrence
+  - Distant Tumor Recurrence
+  - Metastatic
+  - Premalignant
+  significance: required
+```
+
+## Example: 2
+
+The following YAML block defines a recommended attribute `Cycle Number`, which must be specified as a 1-based index (i.e., an integer belonging to the one-sided interval `[1, Inf)`).
+
+``` yaml
+Cycle Number:
+  description: 'the cycle # in which the co-listed reagent(s) was(were) used'
+  type: integer
+  valid-values:
+    min: 1.0
+  significance: recommended
+```
