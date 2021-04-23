@@ -12,7 +12,7 @@ The YAML files in this repository provide detailed specification of the standard
 
 Valid values are specified as sets of predefined keywords for `string` and as [`min`, `max`] intervals for `integer` and `float` variables, where both `min` and `max` can be optionally omitted to define one-sided intervals.
 
-## Example: 1
+## Example 1
 
 The following YAML block defines a required attribute `Tumor tissue type` that relates to collection and processing of biospecimens. A valid field must be specified as a character string, using one of the pre-defined keywords: Primary Tumor, Local Tumor Recurrence, etc.
 
@@ -31,7 +31,7 @@ Tumor tissue type:
   significance: required
 ```
 
-## Example: 2
+## Example 2
 
 The following YAML block defines a recommended attribute `Cycle Number`, which must be specified as a 1-based index (i.e., an integer belonging to the one-sided interval `[1, Inf)`).
 
