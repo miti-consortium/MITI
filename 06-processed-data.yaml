@@ -1,0 +1,69 @@
+Data File ID:
+  description: unique e.g., “self” HTAN ID for data file described by this metadata
+  type: string
+  significance: required
+Filename:
+  description: name of data file as submitted to repository
+  type: filename
+  significance: required
+File Format:
+  description: format of data file
+  type: string
+  significance: required
+Parent Data File ID:
+  description: HTAN ID of Data File from which this Data File was derived
+  type: string
+  significance: recommended
+Protocol ID(s):
+  description: unique identifier (e.g. protocols.io) -- may be a delimited list of
+    identifiers
+  type: doi
+  significance: required
+Software and Version:
+  description: method(s) and parameters used for any quality control, transformation,
+    and visualization to create this image
+  type: doi
+  significance: required
+Passed QC:
+  description: did all masks pass QC
+  type: boolean
+  significance: recommended
+Comment:
+  description: Free text field to use if necessary
+  type: string
+  significance: recommended
+Object class:
+  description: Defines which tissue region or cell compartment this mask pertains
+    to
+  type: string
+  significance: required
+FOV_number:
+  description: Index of FOV (as it pertains to its place in the Experiment)
+  type: integer
+  valid-values:
+    min: 1.0
+  significance: recommended
+FOV_SizeX:
+  description: FOV size in X-dimension (micron)
+  type: float
+  significance: recommended
+FOV_SizeY:
+  description: FOV size in Y-dimension (micron)
+  type: float
+  significance: recommended
+Pyramid:
+  description: whether or not image file contains a pyramid stack
+  type: boolean
+  significance: recommended
+Z_stack:
+  description: whether or not image file contains a Z-stack
+  type: boolean
+  significance: recommended
+T_series:
+  description: whether or not image file contains a time series
+  type: boolean
+  significance: recommended
+Type:
+  description: data type for each pixel value
+  type: string
+  significance: required

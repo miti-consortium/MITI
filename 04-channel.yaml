@@ -1,0 +1,104 @@
+Channel ID:
+  description: this must match the corresponding field in the OME-XML / TIFF header
+  type: string
+  significance: required
+Channel Name:
+  description: this must match the corresponding field in the OME-XML / TIFF header
+  type: string
+  significance: required
+Cycle Number:
+  description: 'the cycle # in which the co-listed reagent(s) was(were) used'
+  type: integer
+  valid-values:
+    min: 1.0
+  significance: recommended
+'Sub-Cycle #':
+  description: 'sub-cycle #'
+  type: integer
+  valid-values:
+    min: 1.0
+  significance: recommended
+Target name:
+  description: short descriptive name (abbreviation) for this target (antigen)
+  type: string
+  significance: required
+Antibody Name:
+  description: short descriptive name for this antibody
+  type: string
+  significance: required
+RRID identifier:
+  description: Research Resource Identifier
+  type: rrid
+  significance: required
+Fluorophore:
+  description: Fluorescent dye label
+  type: string
+  significance: required
+Clone:
+  description: Unique clone identifier
+  type: string
+  significance: required
+Lot:
+  description: lot number from vendor
+  type: string
+  significance: required
+Vendor:
+  description: Vendor name
+  type: string
+  significance: required
+'Catalog #':
+  description: catalog number from vendor
+  type: string
+  significance: required
+Excitation wavelength:
+  description: center/peak of the excitation spectrum (nm)
+  type: float
+  significance: recommended
+Emission wavelength:
+  description: center/peak of the emission spectrum (nm)
+  type: float
+  significance: recommended
+Excitation bandwidth:
+  description: nominal width of excitation spectrum (nm)
+  type: float
+  significance: recommended
+Emission bandwidth:
+  description: nominal width of emission spectrum (nm)
+  type: float
+  significance: recommended
+'Metal isotope: Element':
+  description: Element abbreviation
+  type: string
+  significance: required
+'Metal isotope: Mass':
+  description: Element mass number
+  type: integer
+  significance: required
+'Oligo barcode: upper strand':
+  description: DNA barcode used for labeling
+  type: string
+  significance: required
+'Oligo barcode:  lower strand':
+  description: DNA barcode used for labeling
+  type: string
+  significance: required
+Dilution:
+  description: Final dilution ratio used in experiment
+  type: string
+  significance: recommended
+Concentration:
+  description: Final concentration used in experiment
+  type: string
+  significance: recommended
+Passed QC:
+  description: Identify stains that did not pass QC but are included in the dataset.
+  type: boolean
+  significance: recommended
+QC details:
+  description: Comment on why QC failed
+  type: string
+  significance: recommended
+Comment:
+  description: Free text field to use if necessary
+  type: string
+  significance: recommended
