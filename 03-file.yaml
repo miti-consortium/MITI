@@ -1,0 +1,130 @@
+Data File Id:
+  description: unique e.g., “self” HTAN ID for data file described by this metadata
+  type: string
+  significance: required
+Filename:
+  description: name of data file as submitted to repository
+  type: filename
+  significance: required
+File Format:
+  description: format of data file
+  type: string
+  valid-values:
+  - SVS
+  - OME-TIFF
+  - CZI
+  significance: required
+Channel-Level Metadata Csv Filename:
+  description: “companion” CSV file containing channel-level metadata for multi-channel/multi-cyclic
+    methods
+  type: filename
+  significance: required
+Imaging modality:
+  description: imaging technology
+  type: string
+  valid-values:
+  - epifluorescence
+  - lightsheet
+  - confocal
+  - ion beam
+  - laser ablation
+  significance: required
+Assay Type:
+  description: method / technology used
+  type: string
+  valid-values:
+  - H&E
+  - t-CyCIF
+  - IHC
+  - mIHC
+  - MxIF
+  - SABER
+  - IMC
+  - CODEX
+  - MIBI
+  significance: required
+Protocol Id(S):
+  description: unique identifier (e.g. protocols.io) -- may be a delimited list of
+    identifiers
+  type: doi
+  significance: required
+Acquisition software:
+  description: method(s) and parameters used for any acquisition/ transformation/
+    processing to create this image
+  type: doi
+  significance: recommended
+Image Acquisition Date:
+  type: date
+  significance: recommended
+Microscope:
+  description: Microscope type (manufacturer, model, etc) used for this experiment
+  type: string
+  significance: recommended
+Objective:
+  description: objective lens used (descriptor or other identifier)
+  type: string
+  significance: recommended
+Nominal Magnification:
+  description: nominal optical magnification
+  type: string
+  valid-values:
+  - 10X
+  - 40X
+  significance: recommended
+Lens NA:
+  description: lens numerical aperture
+  type: float
+  significance: recommended
+Working Distance:
+  description: distance from objective to coverslip
+  type: float
+  significance: recommended
+Working Distance Unit:
+  description: default = microns
+  type: float
+  significance: recommended
+Immersion Medium:
+  description: the imaging medium affects the working NA of the objective
+  type: string
+  valid-values:
+  - Air
+  - Water
+  - Glycerin
+  - Oil
+  significance: recommended
+Comment:
+  description: Free text field to use if necessary
+  type: string
+  significance: recommended
+Frame_ Averaging:
+  description: Number of frames averaged together (if no averaging, set to 1)
+  type: integer
+  valid-values:
+    min: 1.0
+  significance: recommended
+Fov_Number:
+  description: Index of FOV (as it pertains to its place in the Experiment)
+  type: integer
+  valid-values:
+    min: 1.0
+  significance: required
+Fov_Sizex:
+  description: FOV size in X-dimension (micron)
+  type: float
+  significance: required
+Fov_Sizey:
+  description: FOV size in Y-dimension (micron)
+  type: float
+  significance: required
+Pyramid:
+  description: whether or not image file contains a pyramid stack
+  type: boolean
+  significance: required
+Z_Stack:
+  description: whether or not image file contains a Z-stack
+  type: boolean
+  significance: required
+T_Series:
+  description: whether or not image file contains a time series
+  type: boolean
+  significance: required
