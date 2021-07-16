@@ -38,7 +38,8 @@ Commit SHA:
 Passed QC:
   description: did all masks pass QC
   type: boolean
-  significance: If ‘Data type’ == ‘image’, required, otherwise recommended
+  significance: 
+    required: Data type == ‘image’
 Comment:
   description: Free text field to use if necessary
   type: string
@@ -46,7 +47,8 @@ Comment:
 Object class:
   description: Defines if the mask delineates nucleus, the cytoplasm, plasma membrane, the whole cell or other
   type: string
-  significance: If `Data type` = `mask`, required
+  significance: 
+    required: Data type == 'mask'
   valid-values:
   - nuclei
   - cytoplasm
@@ -56,7 +58,8 @@ Object class:
 Object class Description:
   description: Free text description of object class
   type: string
-  significance: If Object Class = 'other', required, otherwise recommended
+  significance: 
+    required: Object class == 'other'
 Minimum Intensity Display Range:
   description: Lower-bound intensity value
   type: integer
@@ -110,11 +113,13 @@ PhysicalSizeYUnit:
 PhysicalSizeZ:
   description: physical size of one pixel in z-dimension
   type: float
-  significance: required if size of Z > 1
+  significance: 
+    required: Z_stack == 'True'
 PhysicalSizeZUnit:
   description: unit for PhysicalSizeZ
   type: string
-  significance: required if size of Z > 1 
+  significance: 
+    required: Z_stack == 'True'
 Type:
   description: data type for each pixel value
   type: string
