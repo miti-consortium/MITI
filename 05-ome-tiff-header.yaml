@@ -29,11 +29,13 @@ PhysicalSizeYUnit:
 PhysicalSizeZ:
   description: physical size of one pixel in z-dimension
   type: float
-  significance: if size of Z > 1, required
+  significance: 
+    required: SizeZ > 1
 PhysicalSizeZUnit:
   description: unit for PhysicalSizeZ
   type: string
-  significance: if size of Z > 1, required
+  significance:
+    required: SizeZ > 1
 SizeC:
   description: number of channels
   type: integer
