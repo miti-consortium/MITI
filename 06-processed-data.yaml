@@ -114,12 +114,12 @@ PhysicalSizeZ:
   description: physical size of one pixel in z-dimension
   type: float
   significance: 
-    required: Z_stack == 'True'
+    required: Z_stack == True
 PhysicalSizeZUnit:
   description: unit for PhysicalSizeZ
   type: string
   significance: 
-    required: Z_stack == 'True'
+    required: Z_stack == True
 Type:
   description: data type for each pixel value
   type: string
