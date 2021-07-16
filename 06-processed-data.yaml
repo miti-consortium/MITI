@@ -2,6 +2,9 @@ Data Type:
   description: Specify  if OME-TIFF provided is a segmentation mask or QC-checked image
   type: string
   significance: required
+  valid-values:
+  - mask
+  - image
 Data File ID:
   description: unique e.g., “self” HTAN ID for data file described by this metadata
   type: string
@@ -44,6 +47,12 @@ Object class:
   description: Defines if the mask delineates nucleus, the cytoplasm, plasma membrane, the whole cell or other
   type: string
   significance: If `Data type` = `mask`, required
+  valid-values:
+  - nuclei
+  - cytoplasm
+  - cell
+  - plasma membrane
+  - other
 Object class Description:
   description: Free text description of object class
   type: string
@@ -56,7 +65,6 @@ Maximum Intensity Display Range:
   description: Upper-bound intensity value
   type: integer
   significance: recommended
-  
 FOV_number:
   description: Index of FOV (as it pertains to its place in the Experiment)
   type: integer
