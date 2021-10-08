@@ -1,6 +1,7 @@
 from cerberus import Validator
 import yaml
 import sys
+import os
 
 v = Validator()
 
@@ -35,11 +36,11 @@ def main():
 
     errors = list(filter(lambda c: c[1] == False, check))
     if (len(errors) > 0):
-        print("Validation errors found: " +str(len(errors)))
+        print("Validation errors found in " + os.path.basename + ": " +str(len(errors)))
         print(errors)
         sys.exit(1)
     else:
-        print("No errors found")
+        print("Passed validation: " + os.path.basename(input_yaml))
         
      
 
