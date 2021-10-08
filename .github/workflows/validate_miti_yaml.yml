@@ -14,7 +14,7 @@ jobs:
       - run: |
           pip install cerberus
           pip install pyyaml
-          for f in ./*.doc; do
+          for f in ./*.yaml; do
             python validation/validate_miti_yaml.py "$f" validation/validate-schema.yaml
           done
           
