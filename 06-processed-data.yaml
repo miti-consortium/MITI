@@ -1,5 +1,5 @@
 Data Type:
-  description: Specify  if OME-TIFF provided is a segmentation mask or QC-checked image
+  description: Specify if OME-TIFF provided is a segmentation mask or QC-checked image
   type: string
   significance: required
   valid-values:
@@ -32,8 +32,8 @@ Software and Version:
   type: doi
   significance: required
 Commit SHA:
-  description: Short SHA for software version
-  type: 8 hexadecimal characters (for github)
+  description: Short SHA for software version (8 hexadecimal characters (for github)
+  type: string
   significance: required  
 Passed QC:
   description: did all masks pass QC
