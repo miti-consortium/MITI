@@ -15,6 +15,6 @@ jobs:
           pip install cerberus
           pip install pyyaml
           for f in ./*.yaml; do
-            python validation/validate_miti_yaml.py "$f" validation/validate-schema.yaml
+            python validation/validate_miti_yaml.py "$f" validation/validation-schema.yaml
           done
           
