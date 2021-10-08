@@ -13,4 +13,5 @@ jobs:
           architecture: 'x64' # optional x64 or x86. Defaults to x64 if not specified
       - run: |
           pip install cerberus
+          pip install yaml
           python validation/validate_miti_yaml.py test.yaml validation/validate-schema.yaml
