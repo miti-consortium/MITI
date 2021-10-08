@@ -54,6 +54,7 @@ Acquisition software:
   type: doi
   significance: recommended
 Image Acquisition Date:
+  description: The date of image acquisition
   type: date
   significance: recommended
 Microscope:
