@@ -15,7 +15,9 @@ type:
     - rrid
 significance:
   required: True
-  type: string
+  type: 
+   - string
+   - dict
 category:
   required: False
   type: string
