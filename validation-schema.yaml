@@ -1,0 +1,26 @@
+description:
+  required: True
+  type: string
+type:
+  required: True
+  type: string
+  allowed:
+    - boolean
+    - integer
+    - float
+    - string
+    - filename
+    - date
+    - doi
+    - rrid
+significance:
+  required: True
+  type: string
+category:
+  required: False
+  type: string
+valid-values:
+  required: False
+  type:
+    - list
+    - dict
