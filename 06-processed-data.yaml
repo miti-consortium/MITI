@@ -32,7 +32,7 @@ Software and Version:
   type: doi
   significance: required
 Commit SHA:
-  description: Short SHA for software version (8 hexadecimal characters (for github)
+  description: Short SHA for software version (8 hexadecimal characters for github)
   type: string
   significance: required  
 Passed QC:
