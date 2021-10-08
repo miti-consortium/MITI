@@ -37,8 +37,11 @@ def main():
     if (len(errors) > 0):
         print("Validation errors found: " +str(len(errors)))
         print(errors)
+        sys.exit(1)
     else:
         print("No errors found")
+        
+     
 
 if __name__ == "__main__":
     main()
