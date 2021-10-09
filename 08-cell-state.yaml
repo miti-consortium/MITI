@@ -9,7 +9,9 @@ Filename:
 File Format:
   description: format of data file
   type: string
-  valid values: CSV, FCS
+  valid-values: 
+    - CSV
+    - FCS
   significance: required
 Parent ID:
   description: Parent Identifier from which the biospecimen was obtained. The parent
@@ -40,12 +42,10 @@ Possible cell type / states format:
   type: string
   significance: recommended
 Cell type clustering / calling methods:
-  description: Methods used (connected to protocols.io)
+  description: Methods used (connected to protocols.io) (for example PhenoGraph, k-means, etc.)
   type: string
-  valid values: PhenoGraph, k-means, etc.
   significance: recommended
 Algorithm parameters:
   description: Description of algorithm parameters
   type: string
-  valid values: k=15
   significance: recommended
