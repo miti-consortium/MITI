@@ -2,6 +2,15 @@ Participant ID:
   description: Participant Identifier
   type: string
   significance: required
+Species:
+  description: Text that identifies species of tissue sample.
+  type: string
+  valid-values:
+  - Human
+  - Primate
+  - Mouse
+  - Other
+  significance: required
 Ethnicity:
   description: Text designations that identify ethnicity.
   category: Demographics
@@ -1790,7 +1799,7 @@ Primary diagnosis:
   significance: required
 Morphology:
   description: Histologic Morphology Code based on International Classification of
-    Diseases for Oncology.
+    Diseases 10th Edition.
   category: Diagnosis
   type: string
   valid-values:
@@ -2925,7 +2934,7 @@ Morphology:
   significance: required
 Site of resection or biopsy:
   description: The text term used to describe the anatomic site of origin, of the
-    patient's malignant disease.
+    patient's disease.
   category: Diagnosis
   type: string
   valid-values:
@@ -3292,7 +3301,7 @@ Site of resection or biopsy:
   significance: required
 Tissue or organ of origin:
   description: The text term used to describe the anatomic site of origin, of the
-    patient's malignant disease.
+    patient's disease.
   category: Diagnosis
   type: string
   valid-values:
@@ -3901,7 +3910,7 @@ Days to follow up:
   description: Number of days between the date of sample acquisition and the date
     of the patient's last follow-up appointment or contact.
   category: Follow-Up
-  type: integer
+  type: float
   significance: recommended
 Lost to follow up:
   description: Yes/No/Unknown indicator to identify whether a patient was lost to
@@ -3909,7 +3918,7 @@ Lost to follow up:
   category: Follow-Up
   type: string
   valid-values:
-  - 'Yes'
-  - 'No'
+  - Yes
+  - No
   - Unknown
   significance: recommended

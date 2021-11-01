@@ -46,7 +46,7 @@ Collection Days From Index:
   description: Number of days from the research participant's index date that the
     biospecimen was obtained.
   category: Collection and Processing
-  type: integer
+  type: float
   significance: required
 Acquisition Method Type:
   description: Records the method of acquisition or source for the specimen under
@@ -64,6 +64,12 @@ Acquisition Method Type:
   - Re-excision
   - Sentinel node biopsy
   - Lymphadenectomy
+  significance: required
+Post-mortem Interval:
+  description: Number of days from the research participant's date of death that the
+    biospecimen was obtained
+  category: Collection and Processing
+  type: float
   significance: required
 Tumor tissue type:
   description: Text that describes the kind of disease present in the tumor specimen
@@ -118,7 +124,7 @@ Days to sectioning:
   description: Number of days between the date of sample acquisition and the date
     that the specimen was sectioned
   category: Collection and Processing
-  type: integer
+  type: float
   significance: required
 Storage Method:
   description: The method by which a biomaterial was stored after preservation or
@@ -135,7 +141,7 @@ Days to processing:
   description: Number of days between the date of sample acquisition and the date
     that the biospecimen was processed
   category: Collection and Processing
-  type: integer
+  type: float
   significance: required
 Shipping Conditions:
   description: Text descriptor of the shipping environment of a biospecimen.
