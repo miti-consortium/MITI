@@ -22,13 +22,19 @@ Changes to MITI require a submission via `Github Issues` with the following info
 
 The community can discuss and vote for the submission via Github for at least 30 days.
 
-The initial governanceboard comprises (i)  **Denis Schapiro**, PhD, Research Group Leader at the Heidelberg University (Chair); (ii) **Adam Taylor**, PhD, Senior Research Scientist, Sage Bionetworks; (iii) **Sarah Arena**, MS, Data Scientist, Harvard Medical School and (iv)  **Markus D. Herrmann**, MD, PhD, Assistant Professor of Pathology, Mass General Hospital.
-
-This board will remain for 18 months and can be adjusted based on the community needs.
+The initial governance board comprises (i)  **Denis Schapiro**, PhD, Research Group Leader at the Heidelberg University (Chair); (ii) **Adam Taylor**, PhD, Senior Research Scientist, Sage Bionetworks; (iii) **Sarah Arena**, MS, Data Scientist, Harvard Medical School and (iv)  **Markus D. Herrmann**, MD, PhD, Assistant Professor of Pathology, Mass General Hospital.
 
 The discussions should be limited to Github and `image.sc` forum in #mcmicro.
 
 If the implementation needs a revision, this needs to be submitted latest 30 days after acceptance.
+
+This board will remain for 12 months followed by a community based voting of a new governance board (4-5 board members) every January. New candidates can be proposed by board members, community members or via a direct application. Therefore, an issue will be opened (November) in this repository to collect names and for the voting via emojis. We welcome and encourage participation by everyone!
+
+## Diversity statement¶
+
+The MITI consortium welcomes and encourages participation by everyone. We are committed to being a community that everyone enjoys being part of. Although we may not always be able to accommodate each individual’s preferences, we try our best to treat everyone kindly.
+
+No matter how you identify yourself or how others perceive you: we welcome you. Though no list can hope to be comprehensive, we explicitly honour diversity in: age, culture, ethnicity, genotype, gender identity or expression, language, national origin, neurotype, phenotype, political beliefs, profession, race, religion, sexual orientation, socioeconomic status, subculture and technical ability, to the extent that these do not conflict with this code of conduct.
 
 ## Example 1
 
@@ -61,3 +67,9 @@ Cycle Number:
     min: 1.0
   significance: recommended
 ```
+
+## Endnotes
+
+We are thankful to the groups behind the following documents, from which we drew content and inspiration:
+
+* [The napari Code of Conduct](https://github.com/napari)
