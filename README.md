@@ -30,7 +30,7 @@ If the implementation needs a revision, this needs to be submitted latest 30 day
 
 This board will remain for 12 months followed by a community based voting of a new governance board (4-5 board members) every January. New candidates can be proposed by board members, community members or via a direct application. Therefore, an issue will be opened (November) in this repository to collect names and for the voting via emojis. We welcome and encourage participation by everyone!
 
-## Diversity statement¶
+## Diversity statement
 
 The MITI consortium welcomes and encourages participation by everyone. We are committed to being a community that everyone enjoys being part of. Although we may not always be able to accommodate each individual’s preferences, we try our best to treat everyone kindly.
 
