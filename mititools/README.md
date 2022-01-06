@@ -6,7 +6,7 @@ These tools convert the MITI schema between 3 different formats:
 3. `frictionless`. A [Frictionless Data](https://frictionlessdata.io/standards/#standards-toolkit) [data package](https://specs.frictionlessdata.io/data-package/) schema.
 
 ### Installation
-From the top-level of this repository, install this Python package with:
+From the top-level of this repository (probably called `MITI`), install this Python package with:
 
 ```sh
 pip install mititools/
