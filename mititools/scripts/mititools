@@ -1,0 +1,38 @@
+#!/usr/bin/env python3
+import argparse
+
+import mititools
+
+from mititools.serializers.cerberus_yaml import load_yaml_schema
+from mititools.serializers.flatfields import load_flatfields
+
+import mititools.converters.cerberus_to_flatfields as cerberus_to_flatfields
+import mititools.converters.flatfields_to_frictionless as flatfields_to_frictionless
+
+from mititools.serializers.flatfields import write_flatfields
+from mititools.serializers.frictionless import write_frictionless
+
+
+if __name__=='__main__':
+    parser = argparse.ArgumentParser(description='Command-line MITI tools.')
+    parser.add_argument('command', choices=['convert'], help='Command.')
+    parser.add_argument('source_format',
+        choices=['yaml', 'flatfields', 'frictionless'],
+        help='Schema source format.',
+    )
+    parser.add_argument('target_format',
+        choices=['yaml', 'flatfields', 'frictionless'],
+        help='Schema target format.',
+    )
+    args = parser.parse_args()
+
+    if args.command == 'convert':
+        if args.source_format == 'yaml' and args.target_format == 'flatfields':
+            dicts = load_yaml_schema()
+            fields_table, tables_table, data_tables = cerberus_to_flatfields.convert(dicts)
+            write_flatfields(fields_table, tables_table, data_tables)
+
+        if args.source_format == 'flatfields' and args.target_format == 'frictionless':
+            fields_table, tables_table, data_tables = load_flatfields()
+            top_variables = flatfields_to_frictionless.convert(fields_table, tables_table)
+            write_frictionless(top_variables, data_tables)

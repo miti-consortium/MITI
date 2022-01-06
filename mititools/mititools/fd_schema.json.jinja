@@ -1,0 +1,50 @@
+{
+
+"name" : "{{ data_package_name }}",
+"id" : "{{ globally_unique_data_package_identifier }}",
+"title" : "{{ data_package_title }}",
+"profile": "tabular-data-package",
+"resources": [
+{% for resource in resources %}
+{
+    "profile" : "tabular-data-resource",
+    "dialect" : {
+        "delimiter": "\t",
+        "header": true
+    },
+    "name" : "{{ resource.table_name }}",
+    "path" : "{{ resource.filename }}",
+    "schema" : {
+        "fields" : [
+        {% for field in resource.fields %}
+            {
+                "name" : "{{ field.column_name }}",
+                "title" : "{{ field.title }}",
+                "type": "{{ field.type_string }}",
+                "description": "{{ field.description }}"
+            }
+        {{ ", " if not loop.last else "" }}
+        {% endfor %}
+        ],
+        "primaryKey" : "{{ resource.primary_key }}"
+        {% if resource.has_foreign_keys %}
+        ,
+        "foreignKeys" : [
+        {% for foreign_key in resource.foreign_keys %}
+            {
+                "fields" : "{{ foreign_key.source_column }}",
+                "reference" : {
+                    "resource" : "{{ foreign_key.target_table }}",
+                    "fields" : "{{ foreign_key.target_column }}"
+                }
+            }
+        {{ "," if not loop.last else "]" }}
+        {% endfor %}
+        {% endif %}
+    }
+}
+{{ ", " if not loop.last else "" }}
+{% endfor %}
+]
+
+}
