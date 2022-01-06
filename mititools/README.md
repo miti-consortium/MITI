@@ -1,4 +1,3 @@
-# mititools
 These tools convert the MITI schema between 3 different formats:
 
 1. `yaml`. The reference YAML specification, designed to be validated with [Cerberus](https://docs.python-cerberus.org/en/stable/).
