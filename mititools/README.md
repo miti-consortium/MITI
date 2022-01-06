@@ -5,6 +5,8 @@ These tools convert the MITI schema between 3 different formats:
 2. `flatfields`. A specification based on a flat table of fields.
 3. `frictionless`. A [Frictionless Data](https://frictionlessdata.io/standards/#standards-toolkit) [data package](https://specs.frictionlessdata.io/data-package/) schema.
 
+The translation is not perfect, as the schema languages are not equivalent.
+
 ### Installation
 From the top-level of this repository (probably called `MITI`), install this Python package with:
 
@@ -29,7 +31,9 @@ mititools convert flatfields frictionless
 
 This creates `fd_data_package/datapackage.json`, as well as empty/default data tables.
 
-Validation with Frictionless Data:
+Frictionless Data (FD) is an extensive and modular system of high-level data management tools, with consistent bindings in Python, JavaScript, and the bash command-line.
+
+Validation with FD:
 
 ```sh
 frictionless validate fd_data_package/datapackage.json
