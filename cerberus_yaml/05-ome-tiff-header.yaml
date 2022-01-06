@@ -1,0 +1,89 @@
+Image ID:
+  description: unique internal Image identifier
+  type: string
+  significance: required
+Pixels BigEndian:
+  description: whether big endian byte order is used
+  type: boolean
+  significance: required
+DimensionOrder:
+  description: internal ordering of dimensions
+  type: string
+  significance: required
+PhysicalSizeX:
+  description: physical size of one pixel in x-dimension
+  type: float
+  significance: required
+PhysicalSizeXUnit:
+  description: unit for PhysicalSizeX
+  type: string
+  significance: required
+PhysicalSizeY:
+  description: physical size of one pixel in y-dimension
+  type: float
+  significance: required
+PhysicalSizeYUnit:
+  description: unit for PhysicalSizeY
+  type: string
+  significance: required
+PhysicalSizeZ:
+  description: physical size of one pixel in z-dimension
+  type: float
+  significance: 
+    required: SizeZ > 1
+PhysicalSizeZUnit:
+  description: unit for PhysicalSizeZ
+  type: string
+  significance:
+    required: SizeZ > 1
+SizeC:
+  description: number of channels
+  type: integer
+  valid-values:
+    min: 0.0
+  significance: required
+SizeT:
+  description: number of time-points
+  type: integer
+  valid-values:
+    min: 0.0
+  significance: required
+SizeX:
+  description: number of pixels in x-dimension
+  type: integer
+  valid-values:
+    min: 0.0
+  significance: required
+SizeY:
+  description: number of pixels in y-dimension
+  type: integer
+  valid-values:
+    min: 0.0
+  significance: required
+SizeZ:
+  description: number of z-planes
+  type: integer
+  valid-values:
+    min: 0.0
+  significance: required
+Type:
+  description: data type for each pixel value
+  type: string
+  valid-values:
+  - uint16
+  - float
+  significance: required
+PlaneCount:
+  description: total number of planes in this Image
+  type: integer
+  valid-values:
+    min: 0.0
+  significance: required
+Channel Name:
+  description: channel label for each channel in this image
+  type: string
+  significance: required
+Comment:
+  description: Free text field to use if necessary
+  type: string
+  significance: recommended

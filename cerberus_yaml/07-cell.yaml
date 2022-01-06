@@ -1,0 +1,105 @@
+Data File ID:
+  description: unique e.g., “self” HTAN ID for data file described by this metadata
+  type: string
+  significance: required
+Filename:
+  description: name of data file as submitted to repository
+  type: filename
+  significance: required
+File Format:
+  description: format of data file
+  type: string
+  valid-values:
+  - CSV
+  - FCS
+  - H5AD
+  significance: required
+Parent ID:
+  description: Parent Identifier from which the biospecimen was obtained. The parent
+    could be another biospecimen or a research participant.
+  type: string
+  significance: required
+Software and Version:
+  description: method(s) and parameters used for any acquisition/ transformation/
+    processing to create this image
+  type: doi
+  significance: required
+Commit SHA:
+  description: Short SHA for software version (8 hexadecimal characters for github)
+  type: string
+  significance: required  
+Comment:
+  description: Free text field to use if necessary
+  type: string
+  significance: recommended
+Header size:
+  description: How many columns do have in the CSV / FCS
+  type: integer
+  significance: required
+Object classes included:
+  description: Defines which cell compartment this mask pertains or which tissue structure
+  type: string
+  valid-values:
+  - nuclei
+  - cytoplasm
+  - cell
+  - plasma membrane
+  - other
+  significance: required
+Object classes description:
+  description: Free text description of object class
+  type: string
+  significance: 
+    required: Object classes included == 'other'
+FOV_SizeX:
+  description: FOV size in X-dimension (micron)
+  type: float
+  significance: recommended
+FOV_SizeY:
+  description: FOV size in Y-dimension (micron)
+  type: float
+  significance: recommended  
+Pyramid:
+  description: whether or not image file contains a pyramid stack
+  type: boolean
+  significance: required   
+Z_stack:
+  description: whether or not image file contains a Z-stack
+  type: boolean
+  significance: required
+T_series:
+  description: whether or not image file contains a time series
+  type: boolean
+  significance: required     
+Type:
+  description: bit depth of image
+  type: string
+  significance: required
+PhysicalSizeX:
+  description: physical size of one pixel in x-dimension
+  type: float
+  significance: required
+PhysicalSizeXUnit:
+  description: unit for PhysicalSizeX
+  type: string
+  significance: required
+PhysicalSizeY:
+  description: physical size of one pixel in y-dimension
+  type: float
+  significance: required
+PhysicalSizeYUnit:
+  description: unit for PhysicalSizeY
+  type: string
+  significance: required
+PhysicalSizeZ:
+  description: physical size of one pixel in Z-dimension
+  type: float
+  significance: required
+PhysicalSizeZUnit:
+  description: unit for PhysicalSizeZ
+  type: string
+  significance: required
+Cell-state level:
+  description: Are cell types / states included?
+  type: boolean
+  significance: required

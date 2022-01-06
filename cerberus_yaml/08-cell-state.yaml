@@ -1,0 +1,51 @@
+Data File ID:
+  description: unique e.g., “self” HTAN ID for data file described by this metadata
+  type: string
+  significance: required
+Filename:
+  description: name of data file as submitted to repository
+  type: filename
+  significance: required
+File Format:
+  description: format of data file
+  type: string
+  valid-values: 
+    - CSV
+    - FCS
+  significance: required
+Parent ID:
+  description: Parent Identifier from which the biospecimen was obtained. The parent
+    could be another biospecimen or a research participant.
+  type: string
+  significance: required
+Protocol ID(s):
+  description: unique identifier (e.g. protocols.io) -- may be a delimited list of
+    identifiers
+  type: doi
+  significance: required
+Software and Version:
+  description: method(s) and parameters used for any acquisition/ transformation/
+    processing to create this image
+  type: doi
+  significance: required
+Comment:
+  description: Free text field to use if necessary
+  type: string
+  significance: recommended
+Header size:
+  description: How many columns do have in the CSV / FCS / hdf5
+  type: integer
+  significance: required
+Possible cell type / states format:
+  description: A semicolon-delimited list of possible keywords that each cell will
+    be annotated with
+  type: string
+  significance: recommended
+Cell type clustering / calling methods:
+  description: Methods used (connected to protocols.io) (for example PhenoGraph, k-means, etc.)
+  type: string
+  significance: recommended
+Algorithm parameters:
+  description: Description of algorithm parameters
+  type: string
+  significance: recommended
