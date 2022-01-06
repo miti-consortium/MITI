@@ -7,14 +7,14 @@ These tools convert the MITI schema between 3 different formats:
 
 The translation is not perfect, as the schema languages are not equivalent.
 
-## Installation
+# Installation
 From the top-level of this repository (probably called `MITI`), install this Python package with:
 
 ```sh
 pip install mititools/
 ```
 
-## Convert the Cerberus-validated YAML specification to flat fields
+# Convert the Cerberus-validated YAML specification to flat fields
 
 ```sh
 mititools convert yaml flatfields
@@ -23,7 +23,7 @@ mititools convert yaml flatfields
 This creates `flatfields/fields.tsv`, `flatfields/tables.tsv`, as well as empty/default data tables.
 
 
-## Convert the flat fields specification to Frictionless Data
+# Convert the flat fields specification to Frictionless Data
 
 ```sh
 mititools convert flatfields frictionless
