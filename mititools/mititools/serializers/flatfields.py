@@ -36,6 +36,8 @@ def write_flatfields(fields_table, tables_table, data_tables):
     if not exists(flatfields_path):
         mkdir(flatfields_path)
 
+    fields_table.sort_values(['Table', 'Column name'], inplace=True)
+    tables_table.sort_values('Name', inplace=True)
     for index, table_record in tables_table.iterrows():
         tablename = table_record['Name']
         df = data_tables[tablename]
