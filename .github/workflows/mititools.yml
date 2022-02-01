@@ -15,9 +15,11 @@ jobs:
       - run: |
           echo "current_branch: ${{ steps.branch_name.outputs.current_branch }}"
           echo "ref_branch: ${{ steps.branch_name.outputs.ref_branch }}"
+          echo "head_ref: ${{ github.head_ref }}"
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
+          ref: ${{ github.event.pull_request.head.sha }}
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
@@ -28,5 +30,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: ${{ steps.branch_name.outputs.ref_branch }}"
+          branch: ${{ github.head_ref }}"
           commit-message: "Automated representation builds"
