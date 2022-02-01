@@ -1,0 +1,27 @@
+name: Build representations with MITI tools
+
+on:
+  pull_request:
+    paths:
+      - 'yaml/**'
+
+jobs:
+  tools:
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          persist-credentials: false
+      - uses: actions/setup-python@v2
+        with:
+          python-version: '3.x'
+      - run: |
+          python -m pip install git+https://github.com/miti-consortium/mititools.git
+          mititools generate --source-dir yaml/
+      - uses: gr2m/create-or-update-pull-request-action@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          branch: ${{ github.head_ref }}
+          author: "Automated Action <email@domain.auto>"
+          commit-message: "Automated representation builds"
