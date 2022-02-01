@@ -9,6 +9,12 @@ jobs:
   tools:
     runs-on: ubuntu-latest
     steps:
+      - name: Get branch name
+        id: branch_name
+        uses: tj-actions/branch-names@v5.1
+      - run: |
+          echo "current_branch: ${{ steps.branch_name.outputs.current_branch }}"
+          echo "ref_branch: ${{ steps.branch_name.outputs.ref_branch }}"
       - uses: actions/checkout@v2
         with:
           persist-credentials: false
@@ -22,6 +28,5 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: ${{ github.head_ref }}
-          author: "Automated Action <email@domain.auto>"
+          branch: ${{ steps.branch_name.outputs.ref_branch }}"
           commit-message: "Automated representation builds"
