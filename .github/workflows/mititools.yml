@@ -19,6 +19,9 @@ jobs:
       - run: |
           python -m pip install git+https://github.com/miti-consortium/mititools.git
           mititools generate --source-dir yaml/
-          git add cv/ flatfields/ frictionless/ example_fd_package/
-          git commit -m "Automated representation builds"
-          git push ${{ github.event.pull_request.head.repo.full_name }} ${{ github.head_ref }}
+      - uses: EndBug/add-and-commit@v8
+        with:
+          add: '["cv/", "flatfields/", "frictionless/", "example_fd_package/"]'
+          message: "Automated schema conversions"
+          author_name: GitHub Actions
+          author_email: actions@github.com
