@@ -1,0 +1,2618 @@
+{
+  "name": "data-package-name",
+  "id": "globally unique data package identifier",
+  "title": "data package title",
+  "profile": "tabular-data-package",
+  "resources": [
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen",
+      "path": "biospecimen.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "acquisition_method_type",
+            "title": "Acquisition Method Type",
+            "type": "string",
+            "description": "Records the method of acquisition or source for the specimen under consideration."
+          },
+          {
+            "name": "adjacent_biospecimen_id",
+            "title": "Adjacent Biospecimen ID",
+            "type": "string",
+            "description": "List of Identifiers (separated by commas) of adjacent biospecimens cut from the same sample"
+          },
+          {
+            "name": "analyte_type",
+            "title": "Analyte Type",
+            "type": "string",
+            "description": "Text term that represents the kind of molecular specimen analyte."
+          },
+          {
+            "name": "biospecimen_id",
+            "title": "Biospecimen ID",
+            "type": "string",
+            "description": "Identifier for the Biospecimen"
+          },
+          {
+            "name": "biospecimen_type",
+            "title": "Biospecimen Type",
+            "type": "string",
+            "description": "Biospecimen Type"
+          },
+          {
+            "name": "collection_days_from_index",
+            "title": "Collection Days From Index",
+            "type": "number",
+            "description": "Number of days from the research participant's index date that the biospecimen was obtained."
+          },
+          {
+            "name": "control",
+            "title": "Control",
+            "type": "string",
+            "description": "Control tissue / area"
+          },
+          {
+            "name": "days_to_processing",
+            "title": "Days to processing",
+            "type": "number",
+            "description": "Number of days between the date of sample acquisition and the date that the biospecimen was processed"
+          },
+          {
+            "name": "days_to_sectioning",
+            "title": "Days to sectioning",
+            "type": "number",
+            "description": "Number of days between the date of sample acquisition and the date that the specimen was sectioned"
+          },
+          {
+            "name": "degree_of_dysplasia",
+            "title": "Degree of dysplasia",
+            "type": "string",
+            "description": "Information related to the presence of cells that look abnormal under a microscope but are not cancer. Records the degree of dysplasia for the cyst or lesion under consideration."
+          },
+          {
+            "name": "dysplasia_fraction",
+            "title": "Dysplasia fraction",
+            "type": "number",
+            "description": "Information related to the presence of cells that look abnormal under a microscope but are not cancer. Records the degree of dysplasia for the cyst or lesion under consideration."
+          },
+          {
+            "name": "fiducial_marker",
+            "title": "Fiducial marker",
+            "type": "string",
+            "description": "Fiducial markers for the alignment of images taken across multiple rounds of imaging."
+          },
+          {
+            "name": "fixation_duration",
+            "title": "Fixation Duration",
+            "type": "integer",
+            "description": "The length of time, from beginning to end, required to process or preserve biospecimens in fixative (measured in minutes)"
+          },
+          {
+            "name": "fixative_type",
+            "title": "Fixative Type",
+            "type": "string",
+            "description": "The field to identify the type of fixative used to preserve a tissue specimen"
+          },
+          {
+            "name": "histology_assessment_medium",
+            "title": "Histology Assessment Medium",
+            "type": "string",
+            "description": "The method of assessment used to characterize histology"
+          },
+          {
+            "name": "histology_assessments_by",
+            "title": "Histology Assessments By",
+            "type": "string",
+            "description": "Text term describing who made the histological assessments of the sample"
+          },
+          {
+            "name": "mounting_medium",
+            "title": "Mounting medium",
+            "type": "string",
+            "description": "The solution in which the specimen is embedded, generally under a cover glass. It may be liquid, gum or resinous, soluble in water, alcohol or other solvents and be sealed from the external atmosphere by non-soluble ringing media."
+          },
+          {
+            "name": "number_proliferating_cells",
+            "title": "Number proliferating cells",
+            "type": "integer",
+            "description": "Numeric value that represents the count of proliferating cells determined during pathologic review of the sample slide(s)."
+          },
+          {
+            "name": "parent_id",
+            "title": "Parent ID",
+            "type": "string",
+            "description": "Parent Identifier from which the biospecimen was obtained. The parent could be another biospecimen or a research participant."
+          },
+          {
+            "name": "percent_necrosis",
+            "title": "Percent Necrosis",
+            "type": "number",
+            "description": "Numeric value to represent the percentage of cell death in a malignant tumor sample or specimen."
+          },
+          {
+            "name": "percent_normal_cells",
+            "title": "Percent Normal Cells",
+            "type": "number",
+            "description": "Numeric value to represent the percentage of normal cell content in a malignant tumor sample or specimen."
+          },
+          {
+            "name": "percent_stromal_cells",
+            "title": "Percent Stromal Cells",
+            "type": "number",
+            "description": "Numeric value to represent the percentage of reactive cells that are present in a malignant tumor sample or specimen but are not malignant such as fibroblasts, vascular structures, etc."
+          },
+          {
+            "name": "percent_tumor_cells",
+            "title": "Percent Tumor Cells",
+            "type": "number",
+            "description": "Numeric value to represent the percentage of infiltration by tumor cells in a sample."
+          },
+          {
+            "name": "percent_tumor_nuclei",
+            "title": "Percent Tumor Nuclei",
+            "type": "number",
+            "description": "Numeric value to represent the percentage of tumor nuclei in a malignant neoplasm sample or specimen."
+          },
+          {
+            "name": "post_mortem_interval",
+            "title": "Post mortem Interval",
+            "type": "number",
+            "description": "Number of days from the research participant's date of death that the biospecimen was obtained"
+          },
+          {
+            "name": "preservation_method",
+            "title": "Preservation method",
+            "type": "string",
+            "description": "Text term that represents the method used to preserve the sample."
+          },
+          {
+            "name": "protocol_link",
+            "title": "Protocol Link",
+            "type": "string",
+            "description": "Identifier that describes the protocol by which the sample was obtained or generated. E.g. Protocols.io"
+          },
+          {
+            "name": "section_thickness_value",
+            "title": "Section Thickness Value",
+            "type": "number",
+            "description": "Numeric value to describe the thickness of a slice to tissue taken from a biospecimen, measured in microns (um)."
+          },
+          {
+            "name": "shipping_conditions",
+            "title": "Shipping Conditions",
+            "type": "string",
+            "description": "Text descriptor of the shipping environment of a biospecimen."
+          },
+          {
+            "name": "slicing_method",
+            "title": "Slicing method",
+            "type": "string",
+            "description": "The method by which the tissue was sliced."
+          },
+          {
+            "name": "slide_charge_type",
+            "title": "Slide Charge Type",
+            "type": "string",
+            "description": "A description of the charge on the glass slide."
+          },
+          {
+            "name": "storage_method",
+            "title": "Storage Method",
+            "type": "string",
+            "description": "The method by which a biomaterial was stored after preservation or before another protocol was used."
+          },
+          {
+            "name": "timepoint_label",
+            "title": "Timepoint Label",
+            "type": "string",
+            "description": "Label to identify the time point at which the biospecimen was obtained."
+          },
+          {
+            "name": "tumor_infiltrating_lymphocytes",
+            "title": "Tumor infiltrating lymphocytes",
+            "type": "integer",
+            "description": "Number of tumor-infiltrating lymphocytes"
+          },
+          {
+            "name": "tumor_tissue_type",
+            "title": "Tumor tissue type",
+            "type": "string",
+            "description": "Text that describes the kind of disease present in the tumor specimen as related to a specific time point."
+          }
+        ],
+        "primaryKey": "biospecimen_id",
+        "foreignKeys": [
+          {
+            "fields": "acquisition_method_type",
+            "reference": {
+              "resource": "biospecimen_acquisition_method_type",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "biospecimen_type",
+            "reference": {
+              "resource": "biospecimen_type",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "control",
+            "reference": {
+              "resource": "biospecimen_control",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "degree_of_dysplasia",
+            "reference": {
+              "resource": "biospecimen_degree_of_dysplasia",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "fiducial_marker",
+            "reference": {
+              "resource": "biospecimen_fiducial_marker",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "histology_assessment_medium",
+            "reference": {
+              "resource": "biospecimen_histology_assessment_medium",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "histology_assessments_by",
+            "reference": {
+              "resource": "biospecimen_histology_assessments_by",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "mounting_medium",
+            "reference": {
+              "resource": "biospecimen_mounting_medium",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "preservation_method",
+            "reference": {
+              "resource": "biospecimen_preservation_method",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "shipping_conditions",
+            "reference": {
+              "resource": "biospecimen_shipping_conditions",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "slicing_method",
+            "reference": {
+              "resource": "biospecimen_slicing_method",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "slide_charge_type",
+            "reference": {
+              "resource": "biospecimen_slide_charge_type",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "storage_method",
+            "reference": {
+              "resource": "biospecimen_storage_method",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "timepoint_label",
+            "reference": {
+              "resource": "biospecimen_timepoint_label",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "tumor_tissue_type",
+            "reference": {
+              "resource": "biospecimen_tumor_tissue_type",
+              "fields": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_acquisition_method_type",
+      "path": "biospecimen_acquisition_method_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_control",
+      "path": "biospecimen_control.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_degree_of_dysplasia",
+      "path": "biospecimen_degree_of_dysplasia.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_fiducial_marker",
+      "path": "biospecimen_fiducial_marker.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_histology_assessment_medium",
+      "path": "biospecimen_histology_assessment_medium.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_histology_assessments_by",
+      "path": "biospecimen_histology_assessments_by.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_mounting_medium",
+      "path": "biospecimen_mounting_medium.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_preservation_method",
+      "path": "biospecimen_preservation_method.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_shipping_conditions",
+      "path": "biospecimen_shipping_conditions.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_slicing_method",
+      "path": "biospecimen_slicing_method.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_slide_charge_type",
+      "path": "biospecimen_slide_charge_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_storage_method",
+      "path": "biospecimen_storage_method.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_timepoint_label",
+      "path": "biospecimen_timepoint_label.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_tumor_tissue_type",
+      "path": "biospecimen_tumor_tissue_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "biospecimen_type",
+      "path": "biospecimen_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "cell",
+      "path": "cell.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "cell_state_level",
+            "title": "Cell state level",
+            "type": "boolean",
+            "description": "Are cell types / states included?"
+          },
+          {
+            "name": "comment",
+            "title": "Comment",
+            "type": "string",
+            "description": "Free text field to use if necessary"
+          },
+          {
+            "name": "commit_sha",
+            "title": "Commit SHA",
+            "type": "string",
+            "description": "Short SHA for software version (8 hexadecimal characters for github)"
+          },
+          {
+            "name": "data_file_id",
+            "title": "Data File ID",
+            "type": "string",
+            "description": "unique e.g., \u201cself\u201d HTAN ID for data file described by this metadata"
+          },
+          {
+            "name": "file_format",
+            "title": "File Format",
+            "type": "string",
+            "description": "format of data file"
+          },
+          {
+            "name": "filename",
+            "title": "Filename",
+            "type": "string",
+            "description": "name of data file as submitted to repository"
+          },
+          {
+            "name": "fov_size_x",
+            "title": "FOV Size X",
+            "type": "number",
+            "description": "FOV size in X-dimension (micron)"
+          },
+          {
+            "name": "fov_size_y",
+            "title": "FOV Size Y",
+            "type": "number",
+            "description": "FOV size in Y-dimension (micron)"
+          },
+          {
+            "name": "header_size",
+            "title": "Header size",
+            "type": "integer",
+            "description": "How many columns do have in the CSV / FCS"
+          },
+          {
+            "name": "object_classes_description",
+            "title": "Object classes description",
+            "type": "string",
+            "description": "Free text description of object class"
+          },
+          {
+            "name": "object_classes_included",
+            "title": "Object classes included",
+            "type": "string",
+            "description": "Defines which cell compartment this mask pertains or which tissue structure"
+          },
+          {
+            "name": "parent_id",
+            "title": "Parent ID",
+            "type": "string",
+            "description": "Parent Identifier from which the biospecimen was obtained. The parent could be another biospecimen or a research participant."
+          },
+          {
+            "name": "physical_size_x",
+            "title": "Physical Size X",
+            "type": "number",
+            "description": "physical size of one pixel in x-dimension"
+          },
+          {
+            "name": "physical_size_xunit",
+            "title": "Physical Size XUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeX"
+          },
+          {
+            "name": "physical_size_y",
+            "title": "Physical Size Y",
+            "type": "number",
+            "description": "physical size of one pixel in y-dimension"
+          },
+          {
+            "name": "physical_size_yunit",
+            "title": "Physical Size YUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeY"
+          },
+          {
+            "name": "physical_size_z",
+            "title": "Physical Size Z",
+            "type": "number",
+            "description": "physical size of one pixel in Z-dimension"
+          },
+          {
+            "name": "physical_size_zunit",
+            "title": "Physical Size ZUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeZ"
+          },
+          {
+            "name": "pyramid",
+            "title": "Pyramid",
+            "type": "boolean",
+            "description": "whether or not image file contains a pyramid stack"
+          },
+          {
+            "name": "software_and_version",
+            "title": "Software and Version",
+            "type": "string",
+            "description": "method(s) and parameters used for any acquisition/ transformation/ processing to create this image"
+          },
+          {
+            "name": "t_series",
+            "title": "T series",
+            "type": "boolean",
+            "description": "whether or not image file contains a time series"
+          },
+          {
+            "name": "type",
+            "title": "Type",
+            "type": "string",
+            "description": "bit depth of image"
+          },
+          {
+            "name": "z_stack",
+            "title": "Z stack",
+            "type": "boolean",
+            "description": "whether or not image file contains a Z-stack"
+          }
+        ],
+        "primaryKey": "parent_id",
+        "foreignKeys": [
+          {
+            "fields": "file_format",
+            "reference": {
+              "resource": "cell_file_format",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "object_classes_included",
+            "reference": {
+              "resource": "cell_object_classes_included",
+              "fields": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "cell_file_format",
+      "path": "cell_file_format.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "cell_object_classes_included",
+      "path": "cell_object_classes_included.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "cell_state",
+      "path": "cell_state.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "algorithm_parameters",
+            "title": "Algorithm parameters",
+            "type": "string",
+            "description": "Description of algorithm parameters"
+          },
+          {
+            "name": "cell_type_clustering_calling_methods",
+            "title": "Cell type clustering / calling methods",
+            "type": "string",
+            "description": "Methods used (connected to protocols.io) (for example PhenoGraph, k-means, etc.)"
+          },
+          {
+            "name": "comment",
+            "title": "Comment",
+            "type": "string",
+            "description": "Free text field to use if necessary"
+          },
+          {
+            "name": "data_file_id",
+            "title": "Data File ID",
+            "type": "string",
+            "description": "unique e.g., \u201cself\u201d HTAN ID for data file described by this metadata"
+          },
+          {
+            "name": "file_format",
+            "title": "File Format",
+            "type": "string",
+            "description": "format of data file"
+          },
+          {
+            "name": "filename",
+            "title": "Filename",
+            "type": "string",
+            "description": "name of data file as submitted to repository"
+          },
+          {
+            "name": "header_size",
+            "title": "Header size",
+            "type": "integer",
+            "description": "How many columns do have in the CSV / FCS / hdf5"
+          },
+          {
+            "name": "parent_id",
+            "title": "Parent ID",
+            "type": "string",
+            "description": "Parent Identifier from which the biospecimen was obtained. The parent could be another biospecimen or a research participant."
+          },
+          {
+            "name": "possible_cell_type_states_format",
+            "title": "Possible cell type / states format",
+            "type": "string",
+            "description": "A semicolon-delimited list of possible keywords that each cell will be annotated with"
+          },
+          {
+            "name": "protocol_ids",
+            "title": "Protocol ID(s)",
+            "type": "string",
+            "description": "unique identifier (e.g. protocols.io) -- may be a delimited list of identifiers"
+          },
+          {
+            "name": "software_and_version",
+            "title": "Software and Version",
+            "type": "string",
+            "description": "method(s) and parameters used for any acquisition/ transformation/ processing to create this image"
+          }
+        ],
+        "primaryKey": "parent_id",
+        "foreignKeys": [
+          {
+            "fields": "file_format",
+            "reference": {
+              "resource": "cell_state_file_format",
+              "fields": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "cell_state_file_format",
+      "path": "cell_state_file_format.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "channel",
+      "path": "channel.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "antibody_name",
+            "title": "Antibody Name",
+            "type": "string",
+            "description": "short descriptive name for this antibody"
+          },
+          {
+            "name": "catalog_number",
+            "title": "Catalog #",
+            "type": "string",
+            "description": "catalog number from vendor"
+          },
+          {
+            "name": "channel_id",
+            "title": "Channel ID",
+            "type": "string",
+            "description": "this must match the corresponding field in the OME-XML / TIFF header"
+          },
+          {
+            "name": "channel_name",
+            "title": "Channel Name",
+            "type": "string",
+            "description": "this must match the corresponding field in the OME-XML / TIFF header"
+          },
+          {
+            "name": "clone",
+            "title": "Clone",
+            "type": "string",
+            "description": "Unique clone identifier"
+          },
+          {
+            "name": "comment",
+            "title": "Comment",
+            "type": "string",
+            "description": "Free text field to use if necessary"
+          },
+          {
+            "name": "concentration",
+            "title": "Concentration",
+            "type": "string",
+            "description": "Final concentration used in experiment"
+          },
+          {
+            "name": "cycle_number",
+            "title": "Cycle Number",
+            "type": "integer",
+            "description": "the cycle # in which the co-listed reagent(s) was(were) used"
+          },
+          {
+            "name": "dilution",
+            "title": "Dilution",
+            "type": "string",
+            "description": "Final dilution ratio used in experiment"
+          },
+          {
+            "name": "emission_bandwidth",
+            "title": "Emission bandwidth",
+            "type": "number",
+            "description": "nominal width of emission spectrum (nm)"
+          },
+          {
+            "name": "emission_wavelength",
+            "title": "Emission wavelength",
+            "type": "number",
+            "description": "center/peak of the emission spectrum (nm)"
+          },
+          {
+            "name": "excitation_bandwidth",
+            "title": "Excitation bandwidth",
+            "type": "number",
+            "description": "nominal width of excitation spectrum (nm)"
+          },
+          {
+            "name": "excitation_wavelength",
+            "title": "Excitation wavelength",
+            "type": "number",
+            "description": "center/peak of the excitation spectrum (nm)"
+          },
+          {
+            "name": "fluorophore",
+            "title": "Fluorophore",
+            "type": "string",
+            "description": "Fluorescent dye label"
+          },
+          {
+            "name": "lot",
+            "title": "Lot",
+            "type": "string",
+            "description": "lot number from vendor"
+          },
+          {
+            "name": "metal_isotope_element",
+            "title": "Metal isotope: Element",
+            "type": "string",
+            "description": "Element abbreviation"
+          },
+          {
+            "name": "metal_isotope_mass",
+            "title": "Metal isotope: Mass",
+            "type": "integer",
+            "description": "Element mass number"
+          },
+          {
+            "name": "oligo_barcode_lower_strand",
+            "title": "Oligo barcode: lower strand",
+            "type": "string",
+            "description": "DNA barcode used for labeling"
+          },
+          {
+            "name": "oligo_barcode_upper_strand",
+            "title": "Oligo barcode: upper strand",
+            "type": "string",
+            "description": "DNA barcode used for labeling"
+          },
+          {
+            "name": "passed_qc",
+            "title": "Passed QC",
+            "type": "boolean",
+            "description": "Identify stains that did not pass QC but are included in the dataset."
+          },
+          {
+            "name": "qc_details",
+            "title": "QC details",
+            "type": "string",
+            "description": "Comment on why QC failed"
+          },
+          {
+            "name": "rrid_identifier",
+            "title": "RRID identifier",
+            "type": "string",
+            "description": "Research Resource Identifier"
+          },
+          {
+            "name": "sub_cycle_number",
+            "title": "Sub Cycle #",
+            "type": "integer",
+            "description": "sub-cycle #"
+          },
+          {
+            "name": "target_name",
+            "title": "Target name",
+            "type": "string",
+            "description": "short descriptive name (abbreviation) for this target (antigen)"
+          },
+          {
+            "name": "vendor",
+            "title": "Vendor",
+            "type": "string",
+            "description": "Vendor name"
+          }
+        ],
+        "primaryKey": "channel_id"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical",
+      "path": "clinical.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "age_at_diagnosis",
+            "title": "Age at diagnosis",
+            "type": "integer",
+            "description": "Age at the time of diagnosis expressed in the number of days since birth."
+          },
+          {
+            "name": "cause_of_death",
+            "title": "Cause of death",
+            "type": "string",
+            "description": "Text term to identify the cause of death for a patient."
+          },
+          {
+            "name": "classification_of_tumor",
+            "title": "Classification of tumor",
+            "type": "string",
+            "description": "Text that describes the kind of disease present in the tumor specimen as related to a specific time point."
+          },
+          {
+            "name": "days_to_death",
+            "title": "Days to death",
+            "type": "integer",
+            "description": "Age at the time of death expressed in the number of days since birth."
+          },
+          {
+            "name": "days_to_follow_up",
+            "title": "Days to follow up",
+            "type": "number",
+            "description": "Number of days between the date of sample acquisition and the date of the patient's last follow-up appointment or contact."
+          },
+          {
+            "name": "days_to_last_follow_up",
+            "title": "Days to last follow up",
+            "type": "integer",
+            "description": "Time interval from the date of last follow up to the date of initial pathologic diagnosis, represented as a calculated number of days."
+          },
+          {
+            "name": "days_to_last_known_disease_status",
+            "title": "Days to last known disease status",
+            "type": "integer",
+            "description": "Time interval from the date of last follow up to the date of initial pathologic diagnosis, represented as a calculated number of days."
+          },
+          {
+            "name": "days_to_progression",
+            "title": "Days to progression",
+            "type": "integer",
+            "description": "Number of days between the date of the patient\u2019s first diagnosis and the date the patient's disease progressed."
+          },
+          {
+            "name": "days_to_progression_free",
+            "title": "Days to progression free",
+            "type": "integer",
+            "description": "Number of days between the date used for index (DOB) and the date the patient\u2019s disease was formally confirmed as progression-free."
+          },
+          {
+            "name": "ethnicity",
+            "title": "Ethnicity",
+            "type": "string",
+            "description": "Text designations that identify ethnicity."
+          },
+          {
+            "name": "gender",
+            "title": "Gender",
+            "type": "string",
+            "description": "Text designations that identify gender."
+          },
+          {
+            "name": "gene_symbol",
+            "title": "Gene symbol",
+            "type": "string",
+            "description": "The text term used to describe a gene targeted or included in molecular analysis. For rearrangements, this is should be used to represent the reference gene. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here."
+          },
+          {
+            "name": "hereditary_cancer_predisposition_syndrome",
+            "title": "Hereditary cancer predisposition syndrome",
+            "type": "string",
+            "description": "Inherited genetic predisposition syndrome that confers heightened susceptibility to cancer in the patient."
+          },
+          {
+            "name": "initial_disease_status",
+            "title": "Initial disease status",
+            "type": "string",
+            "description": "Text term used to describe the status of the patient\u2019s malignancy when the treatment began."
+          },
+          {
+            "name": "known_genetic_predisposition_mutation",
+            "title": "Known genetic predisposition mutation",
+            "type": "string",
+            "description": "A yes/no/unknown indicator to identify whether there is a known genetic predisposition mutation present in the patient."
+          },
+          {
+            "name": "last_known_disease_status",
+            "title": "Last known disease status",
+            "type": "string",
+            "description": "Text term that describes the last known state or condition of an individual's neoplasm."
+          },
+          {
+            "name": "lost_to_follow_up",
+            "title": "Lost to follow up",
+            "type": "string",
+            "description": "Yes/No/Unknown indicator to identify whether a patient was lost to follow up."
+          },
+          {
+            "name": "molecular_analysis_method",
+            "title": "Molecular analysis method",
+            "type": "string",
+            "description": "The text term used to describe the method used for molecular analysis. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here."
+          },
+          {
+            "name": "morphology",
+            "title": "Morphology",
+            "type": "string",
+            "description": "Histologic Morphology Code based on International Classification of Diseases 10th Edition."
+          },
+          {
+            "name": "pack_years_smoked",
+            "title": "Pack years smoked",
+            "type": "number",
+            "description": "Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years."
+          },
+          {
+            "name": "participant_id",
+            "title": "Participant ID",
+            "type": "string",
+            "description": "Participant Identifier"
+          },
+          {
+            "name": "primary_diagnosis",
+            "title": "Primary diagnosis",
+            "type": "string",
+            "description": "Text term used to describe the patient's histologic diagnosis."
+          },
+          {
+            "name": "prior_treatment",
+            "title": "Prior treatment",
+            "type": "string",
+            "description": "Yes/no/unknown indicator related to the administration of therapeutic agents received before the body specimen was collected."
+          },
+          {
+            "name": "progression_or_recurrence",
+            "title": "Progression or recurrence",
+            "type": "string",
+            "description": "Yes/No/Unknown indicator to identify whether a patient has had a new tumor event after initial treatment."
+          },
+          {
+            "name": "race",
+            "title": "Race",
+            "type": "string",
+            "description": "Text designations that identify race."
+          },
+          {
+            "name": "site_of_resection_or_biopsy",
+            "title": "Site of resection or biopsy",
+            "type": "string",
+            "description": "The text term used to describe the anatomic site of origin, of the patient's disease."
+          },
+          {
+            "name": "species",
+            "title": "Species",
+            "type": "string",
+            "description": "Text that identifies species of tissue sample."
+          },
+          {
+            "name": "test_result",
+            "title": "Test result",
+            "type": "string",
+            "description": "The text term used to describe the result of the molecular test."
+          },
+          {
+            "name": "therapeutic_agents",
+            "title": "Therapeutic agents",
+            "type": "string",
+            "description": "Text identification of the individual agents used as part of a treatment regimen."
+          },
+          {
+            "name": "tissue_or_organ_of_origin",
+            "title": "Tissue or organ of origin",
+            "type": "string",
+            "description": "The text term used to describe the anatomic site of origin, of the patient's disease."
+          },
+          {
+            "name": "treatment_type",
+            "title": "Treatment type",
+            "type": "string",
+            "description": "Text term that describes the kind of treatment administered."
+          },
+          {
+            "name": "tumor_grade",
+            "title": "Tumor grade",
+            "type": "string",
+            "description": "Numeric value to express the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness."
+          },
+          {
+            "name": "vital_status_at_last_follow_up",
+            "title": "Vital status at last follow up",
+            "type": "string",
+            "description": "The survival state of the person at the last follow up contact."
+          },
+          {
+            "name": "year_of_death",
+            "title": "Year of death",
+            "type": "integer",
+            "description": "Numeric value to represent the year of the death of an individual."
+          },
+          {
+            "name": "years_smoked",
+            "title": "Years smoked",
+            "type": "integer",
+            "description": "Numeric value to represent the number of years a person has been smoking."
+          }
+        ],
+        "primaryKey": "participant_id",
+        "foreignKeys": [
+          {
+            "fields": "cause_of_death",
+            "reference": {
+              "resource": "clinical_cause_of_death",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "classification_of_tumor",
+            "reference": {
+              "resource": "clinical_classification_of_tumor",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "ethnicity",
+            "reference": {
+              "resource": "clinical_ethnicity",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "gender",
+            "reference": {
+              "resource": "clinical_gender",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "hereditary_cancer_predisposition_syndrome",
+            "reference": {
+              "resource": "clinical_hereditary_cancer_predisposition_syndrome",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "initial_disease_status",
+            "reference": {
+              "resource": "clinical_initial_disease_status",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "known_genetic_predisposition_mutation",
+            "reference": {
+              "resource": "clinical_known_genetic_predisposition_mutation",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "last_known_disease_status",
+            "reference": {
+              "resource": "clinical_last_known_disease_status",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "lost_to_follow_up",
+            "reference": {
+              "resource": "clinical_lost_to_follow_up",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "molecular_analysis_method",
+            "reference": {
+              "resource": "clinical_molecular_analysis_method",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "morphology",
+            "reference": {
+              "resource": "clinical_morphology",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "primary_diagnosis",
+            "reference": {
+              "resource": "clinical_primary_diagnosis",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "prior_treatment",
+            "reference": {
+              "resource": "clinical_prior_treatment",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "progression_or_recurrence",
+            "reference": {
+              "resource": "clinical_progression_or_recurrence",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "race",
+            "reference": {
+              "resource": "clinical_race",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "site_of_resection_or_biopsy",
+            "reference": {
+              "resource": "clinical_site_of_resection_or_biopsy",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "species",
+            "reference": {
+              "resource": "clinical_species",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "test_result",
+            "reference": {
+              "resource": "clinical_test_result",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "tissue_or_organ_of_origin",
+            "reference": {
+              "resource": "clinical_tissue_or_organ_of_origin",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "treatment_type",
+            "reference": {
+              "resource": "clinical_treatment_type",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "tumor_grade",
+            "reference": {
+              "resource": "clinical_tumor_grade",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "vital_status_at_last_follow_up",
+            "reference": {
+              "resource": "clinical_vital_status_at_last_follow_up",
+              "fields": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_cause_of_death",
+      "path": "clinical_cause_of_death.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_classification_of_tumor",
+      "path": "clinical_classification_of_tumor.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_ethnicity",
+      "path": "clinical_ethnicity.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_gender",
+      "path": "clinical_gender.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_hereditary_cancer_predisposition_syndrome",
+      "path": "clinical_hereditary_cancer_predisposition_syndrome.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_initial_disease_status",
+      "path": "clinical_initial_disease_status.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_known_genetic_predisposition_mutation",
+      "path": "clinical_known_genetic_predisposition_mutation.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_last_known_disease_status",
+      "path": "clinical_last_known_disease_status.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_lost_to_follow_up",
+      "path": "clinical_lost_to_follow_up.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_molecular_analysis_method",
+      "path": "clinical_molecular_analysis_method.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_morphology",
+      "path": "clinical_morphology.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_primary_diagnosis",
+      "path": "clinical_primary_diagnosis.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_prior_treatment",
+      "path": "clinical_prior_treatment.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_progression_or_recurrence",
+      "path": "clinical_progression_or_recurrence.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_race",
+      "path": "clinical_race.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_site_of_resection_or_biopsy",
+      "path": "clinical_site_of_resection_or_biopsy.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_species",
+      "path": "clinical_species.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_test_result",
+      "path": "clinical_test_result.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_tissue_or_organ_of_origin",
+      "path": "clinical_tissue_or_organ_of_origin.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_treatment_type",
+      "path": "clinical_treatment_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_tumor_grade",
+      "path": "clinical_tumor_grade.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "clinical_vital_status_at_last_follow_up",
+      "path": "clinical_vital_status_at_last_follow_up.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "file",
+      "path": "file.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "acquisition_software",
+            "title": "Acquisition software",
+            "type": "string",
+            "description": "method(s) and parameters used for any acquisition/ transformation/ processing to create this image"
+          },
+          {
+            "name": "assay_type",
+            "title": "Assay Type",
+            "type": "string",
+            "description": "method / technology used"
+          },
+          {
+            "name": "channel_level_metadata_csv_filename",
+            "title": "Channel Level Metadata Csv Filename",
+            "type": "string",
+            "description": "\u201ccompanion\u201d CSV file containing channel-level metadata for multi-channel/multi-cyclic methods"
+          },
+          {
+            "name": "comment",
+            "title": "Comment",
+            "type": "string",
+            "description": "Free text field to use if necessary"
+          },
+          {
+            "name": "data_file_id",
+            "title": "Data File Id",
+            "type": "string",
+            "description": "unique e.g., \u201cself\u201d HTAN ID for data file described by this metadata"
+          },
+          {
+            "name": "file_format",
+            "title": "File Format",
+            "type": "string",
+            "description": "format of data file"
+          },
+          {
+            "name": "filename",
+            "title": "Filename",
+            "type": "string",
+            "description": "name of data file as submitted to repository"
+          },
+          {
+            "name": "fov_number",
+            "title": "Fov Number",
+            "type": "integer",
+            "description": "Index of FOV (as it pertains to its place in the Experiment)"
+          },
+          {
+            "name": "fov_sizex",
+            "title": "Fov Sizex",
+            "type": "number",
+            "description": "FOV size in X-dimension (micron)"
+          },
+          {
+            "name": "fov_sizey",
+            "title": "Fov Sizey",
+            "type": "number",
+            "description": "FOV size in Y-dimension (micron)"
+          },
+          {
+            "name": "frame_averaging",
+            "title": "Frame Averaging",
+            "type": "integer",
+            "description": "Number of frames averaged together (if no averaging, set to 1)"
+          },
+          {
+            "name": "image_acquisition_date",
+            "title": "Image Acquisition Date",
+            "type": "date",
+            "description": "The date of image acquisition"
+          },
+          {
+            "name": "imaging_modality",
+            "title": "Imaging modality",
+            "type": "string",
+            "description": "imaging technology"
+          },
+          {
+            "name": "immersion_medium",
+            "title": "Immersion Medium",
+            "type": "string",
+            "description": "the imaging medium affects the working NA of the objective"
+          },
+          {
+            "name": "lens_na",
+            "title": "Lens NA",
+            "type": "number",
+            "description": "lens numerical aperture"
+          },
+          {
+            "name": "microscope",
+            "title": "Microscope",
+            "type": "string",
+            "description": "Microscope type (manufacturer, model, etc) used for this experiment"
+          },
+          {
+            "name": "nominal_magnification",
+            "title": "Nominal Magnification",
+            "type": "string",
+            "description": "nominal optical magnification"
+          },
+          {
+            "name": "objective",
+            "title": "Objective",
+            "type": "string",
+            "description": "objective lens used (descriptor or other identifier)"
+          },
+          {
+            "name": "protocol_ids",
+            "title": "Protocol Id(S)",
+            "type": "string",
+            "description": "unique identifier (e.g. protocols.io) -- may be a delimited list of identifiers"
+          },
+          {
+            "name": "pyramid",
+            "title": "Pyramid",
+            "type": "boolean",
+            "description": "whether or not image file contains a pyramid stack"
+          },
+          {
+            "name": "t_series",
+            "title": "T Series",
+            "type": "boolean",
+            "description": "whether or not image file contains a time series"
+          },
+          {
+            "name": "working_distance",
+            "title": "Working Distance",
+            "type": "number",
+            "description": "distance from objective to coverslip"
+          },
+          {
+            "name": "working_distance_unit",
+            "title": "Working Distance Unit",
+            "type": "number",
+            "description": "default = microns"
+          },
+          {
+            "name": "z_stack",
+            "title": "Z Stack",
+            "type": "boolean",
+            "description": "whether or not image file contains a Z-stack"
+          }
+        ],
+        "primaryKey": "data_file_id",
+        "foreignKeys": [
+          {
+            "fields": "assay_type",
+            "reference": {
+              "resource": "file_assay_type",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "file_format",
+            "reference": {
+              "resource": "file_format",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "imaging_modality",
+            "reference": {
+              "resource": "file_imaging_modality",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "immersion_medium",
+            "reference": {
+              "resource": "file_immersion_medium",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "nominal_magnification",
+            "reference": {
+              "resource": "file_nominal_magnification",
+              "fields": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "file_assay_type",
+      "path": "file_assay_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "file_format",
+      "path": "file_format.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "file_imaging_modality",
+      "path": "file_imaging_modality.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "file_immersion_medium",
+      "path": "file_immersion_medium.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "file_nominal_magnification",
+      "path": "file_nominal_magnification.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "ome_tiff_header",
+      "path": "ome_tiff_header.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "channel_name",
+            "title": "Channel Name",
+            "type": "string",
+            "description": "channel label for each channel in this image"
+          },
+          {
+            "name": "comment",
+            "title": "Comment",
+            "type": "string",
+            "description": "Free text field to use if necessary"
+          },
+          {
+            "name": "dimension_order",
+            "title": "Dimension Order",
+            "type": "string",
+            "description": "internal ordering of dimensions"
+          },
+          {
+            "name": "image_id",
+            "title": "Image ID",
+            "type": "string",
+            "description": "unique internal Image identifier"
+          },
+          {
+            "name": "physical_size_x",
+            "title": "Physical Size X",
+            "type": "number",
+            "description": "physical size of one pixel in x-dimension"
+          },
+          {
+            "name": "physical_size_xunit",
+            "title": "Physical Size XUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeX"
+          },
+          {
+            "name": "physical_size_y",
+            "title": "Physical Size Y",
+            "type": "number",
+            "description": "physical size of one pixel in y-dimension"
+          },
+          {
+            "name": "physical_size_yunit",
+            "title": "Physical Size YUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeY"
+          },
+          {
+            "name": "physical_size_z",
+            "title": "Physical Size Z",
+            "type": "number",
+            "description": "physical size of one pixel in z-dimension"
+          },
+          {
+            "name": "physical_size_zunit",
+            "title": "Physical Size ZUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeZ"
+          },
+          {
+            "name": "pixels_big_endian",
+            "title": "Pixels Big Endian",
+            "type": "boolean",
+            "description": "whether big endian byte order is used"
+          },
+          {
+            "name": "plane_count",
+            "title": "Plane Count",
+            "type": "integer",
+            "description": "total number of planes in this Image"
+          },
+          {
+            "name": "size_c",
+            "title": "Size C",
+            "type": "integer",
+            "description": "number of channels"
+          },
+          {
+            "name": "size_t",
+            "title": "Size T",
+            "type": "integer",
+            "description": "number of time-points"
+          },
+          {
+            "name": "size_x",
+            "title": "Size X",
+            "type": "integer",
+            "description": "number of pixels in x-dimension"
+          },
+          {
+            "name": "size_y",
+            "title": "Size Y",
+            "type": "integer",
+            "description": "number of pixels in y-dimension"
+          },
+          {
+            "name": "size_z",
+            "title": "Size Z",
+            "type": "integer",
+            "description": "number of z-planes"
+          },
+          {
+            "name": "type",
+            "title": "Type",
+            "type": "string",
+            "description": "data type for each pixel value"
+          }
+        ],
+        "primaryKey": "image_id",
+        "foreignKeys": [
+          {
+            "fields": "type",
+            "reference": {
+              "resource": "ome_tiff_header_type",
+              "fields": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "ome_tiff_header_type",
+      "path": "ome_tiff_header_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "processed_data",
+      "path": "processed_data.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "comment",
+            "title": "Comment",
+            "type": "string",
+            "description": "Free text field to use if necessary"
+          },
+          {
+            "name": "commit_sha",
+            "title": "Commit SHA",
+            "type": "string",
+            "description": "Short SHA for software version (8 hexadecimal characters for github)"
+          },
+          {
+            "name": "data_file_id",
+            "title": "Data File ID",
+            "type": "string",
+            "description": "unique e.g., \u201cself\u201d HTAN ID for data file described by this metadata"
+          },
+          {
+            "name": "data_type",
+            "title": "Data Type",
+            "type": "string",
+            "description": "Specify if OME-TIFF provided is a segmentation mask or QC-checked image"
+          },
+          {
+            "name": "file_format",
+            "title": "File Format",
+            "type": "string",
+            "description": "format of data file"
+          },
+          {
+            "name": "filename",
+            "title": "Filename",
+            "type": "string",
+            "description": "name of data file as submitted to repository"
+          },
+          {
+            "name": "fov_number",
+            "title": "FOV number",
+            "type": "integer",
+            "description": "Index of FOV (as it pertains to its place in the Experiment)"
+          },
+          {
+            "name": "fov_size_x",
+            "title": "FOV Size X",
+            "type": "number",
+            "description": "FOV size in X-dimension (micron)"
+          },
+          {
+            "name": "fov_size_y",
+            "title": "FOV Size Y",
+            "type": "number",
+            "description": "FOV size in Y-dimension (micron)"
+          },
+          {
+            "name": "maximum_intensity_display_range",
+            "title": "Maximum Intensity Display Range",
+            "type": "integer",
+            "description": "Upper-bound intensity value"
+          },
+          {
+            "name": "minimum_intensity_display_range",
+            "title": "Minimum Intensity Display Range",
+            "type": "integer",
+            "description": "Lower-bound intensity value"
+          },
+          {
+            "name": "object_class",
+            "title": "Object class",
+            "type": "string",
+            "description": "Defines if the mask delineates nucleus, the cytoplasm, plasma membrane, the whole cell or other"
+          },
+          {
+            "name": "object_class_description",
+            "title": "Object class Description",
+            "type": "string",
+            "description": "Free text description of object class"
+          },
+          {
+            "name": "parent_data_file_id",
+            "title": "Parent Data File ID",
+            "type": "string",
+            "description": "HTAN ID of Data File from which this Data File was derived"
+          },
+          {
+            "name": "passed_qc",
+            "title": "Passed QC",
+            "type": "boolean",
+            "description": "did all masks pass QC"
+          },
+          {
+            "name": "physical_size_x",
+            "title": "Physical Size X",
+            "type": "number",
+            "description": "physical size of one pixel in x-dimension"
+          },
+          {
+            "name": "physical_size_xunit",
+            "title": "Physical Size XUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeX"
+          },
+          {
+            "name": "physical_size_y",
+            "title": "Physical Size Y",
+            "type": "number",
+            "description": "physical size of one pixel in y-dimension"
+          },
+          {
+            "name": "physical_size_yunit",
+            "title": "Physical Size YUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeY"
+          },
+          {
+            "name": "physical_size_z",
+            "title": "Physical Size Z",
+            "type": "number",
+            "description": "physical size of one pixel in z-dimension"
+          },
+          {
+            "name": "physical_size_zunit",
+            "title": "Physical Size ZUnit",
+            "type": "string",
+            "description": "unit for PhysicalSizeZ"
+          },
+          {
+            "name": "protocol_ids",
+            "title": "Protocol ID(s)",
+            "type": "string",
+            "description": "unique identifier (e.g. protocols.io) -- may be a delimited list of identifiers"
+          },
+          {
+            "name": "pyramid",
+            "title": "Pyramid",
+            "type": "boolean",
+            "description": "whether or not image file contains a pyramid stack"
+          },
+          {
+            "name": "software_and_version",
+            "title": "Software and Version",
+            "type": "string",
+            "description": "method(s) and parameters used for any quality control, transformation, and visualization to create this image"
+          },
+          {
+            "name": "t_series",
+            "title": "T series",
+            "type": "boolean",
+            "description": "whether or not image file contains a time series"
+          },
+          {
+            "name": "type",
+            "title": "Type",
+            "type": "string",
+            "description": "data type for each pixel value"
+          },
+          {
+            "name": "z_stack",
+            "title": "Z stack",
+            "type": "boolean",
+            "description": "whether or not image file contains a Z-stack"
+          }
+        ],
+        "primaryKey": "data_file_id",
+        "foreignKeys": [
+          {
+            "fields": "data_type",
+            "reference": {
+              "resource": "processed_data_data_type",
+              "fields": "value"
+            }
+          },
+          {
+            "fields": "object_class",
+            "reference": {
+              "resource": "processed_data_object_class",
+              "fields": "value"
+            }
+          }
+        ]
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "processed_data_data_type",
+      "path": "processed_data_data_type.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    },
+    {
+      "profile": "tabular-data-resource",
+      "dialect": {
+        "delimiter": "\t",
+        "header": true
+      },
+      "name": "processed_data_object_class",
+      "path": "processed_data_object_class.tsv",
+      "schema": {
+        "fields": [
+          {
+            "name": "value",
+            "title": "Value",
+            "type": "string",
+            "description": ""
+          }
+        ],
+        "primaryKey": "value"
+      }
+    }
+  ]
+}

@@ -1,0 +1,247 @@
+Table	Column name	Column label	Data type	Necessity	Category	Data format	Foreign table	Foreign key	Description
+biospecimen	acquisition_method_type	Acquisition Method Type	string		Collection and Processing	default	biospecimen_acquisition_method_type	value	Records the method of acquisition or source for the specimen under consideration.
+biospecimen	adjacent_biospecimen_id	Adjacent Biospecimen ID	string			default			List of Identifiers (separated by commas) of adjacent biospecimens cut from the same sample
+biospecimen	analyte_type	Analyte Type	string			default			Text term that represents the kind of molecular specimen analyte.
+biospecimen	biospecimen_id	Biospecimen ID	string			default			Identifier for the Biospecimen
+biospecimen	biospecimen_type	Biospecimen Type	string			default	biospecimen_type	value	Biospecimen Type
+biospecimen	collection_days_from_index	Collection Days From Index	number		Collection and Processing	default			Number of days from the research participant's index date that the biospecimen was obtained.
+biospecimen	control	Control	string		Imaging	default	biospecimen_control	value	Control tissue / area
+biospecimen	days_to_processing	Days to processing	number		Collection and Processing	default			Number of days between the date of sample acquisition and the date that the biospecimen was processed
+biospecimen	days_to_sectioning	Days to sectioning	number		Collection and Processing	default			Number of days between the date of sample acquisition and the date that the specimen was sectioned
+biospecimen	degree_of_dysplasia	Degree of dysplasia	string		Histologic Assessment	default	biospecimen_degree_of_dysplasia	value	Information related to the presence of cells that look abnormal under a microscope but are not cancer. Records the degree of dysplasia for the cyst or lesion under consideration.
+biospecimen	dysplasia_fraction	Dysplasia fraction	number		Histologic Assessment	default			Information related to the presence of cells that look abnormal under a microscope but are not cancer. Records the degree of dysplasia for the cyst or lesion under consideration.
+biospecimen	fiducial_marker	Fiducial marker	string		Imaging	default	biospecimen_fiducial_marker	value	Fiducial markers for the alignment of images taken across multiple rounds of imaging.
+biospecimen	fixation_duration	Fixation Duration	integer		Collection and Processing	default			The length of time, from beginning to end, required to process or preserve biospecimens in fixative (measured in minutes)
+biospecimen	fixative_type	Fixative Type	string		Collection and Processing	default			The field to identify the type of fixative used to preserve a tissue specimen
+biospecimen	histology_assessment_medium	Histology Assessment Medium	string		Histologic Assessment	default	biospecimen_histology_assessment_medium	value	The method of assessment used to characterize histology
+biospecimen	histology_assessments_by	Histology Assessments By	string		Histologic Assessment	default	biospecimen_histology_assessments_by	value	Text term describing who made the histological assessments of the sample
+biospecimen	mounting_medium	Mounting medium	string		Imaging	default	biospecimen_mounting_medium	value	The solution in which the specimen is embedded, generally under a cover glass. It may be liquid, gum or resinous, soluble in water, alcohol or other solvents and be sealed from the external atmosphere by non-soluble ringing media.
+biospecimen	number_proliferating_cells	Number proliferating cells	integer		Histologic Assessment	default			Numeric value that represents the count of proliferating cells determined during pathologic review of the sample slide(s).
+biospecimen	parent_id	Parent ID	string			default			Parent Identifier from which the biospecimen was obtained. The parent could be another biospecimen or a research participant.
+biospecimen	percent_necrosis	Percent Necrosis	number		Histologic Assessment	default			Numeric value to represent the percentage of cell death in a malignant tumor sample or specimen.
+biospecimen	percent_normal_cells	Percent Normal Cells	number		Histologic Assessment	default			Numeric value to represent the percentage of normal cell content in a malignant tumor sample or specimen.
+biospecimen	percent_stromal_cells	Percent Stromal Cells	number		Histologic Assessment	default			Numeric value to represent the percentage of reactive cells that are present in a malignant tumor sample or specimen but are not malignant such as fibroblasts, vascular structures, etc.
+biospecimen	percent_tumor_cells	Percent Tumor Cells	number		Histologic Assessment	default			Numeric value to represent the percentage of infiltration by tumor cells in a sample.
+biospecimen	percent_tumor_nuclei	Percent Tumor Nuclei	number		Histologic Assessment	default			Numeric value to represent the percentage of tumor nuclei in a malignant neoplasm sample or specimen.
+biospecimen	post_mortem_interval	Post mortem Interval	number		Collection and Processing	default			Number of days from the research participant's date of death that the biospecimen was obtained
+biospecimen	preservation_method	Preservation method	string		Collection and Processing	default	biospecimen_preservation_method	value	Text term that represents the method used to preserve the sample.
+biospecimen	protocol_link	Protocol Link	string		Collection and Processing	default			Identifier that describes the protocol by which the sample was obtained or generated. E.g. Protocols.io
+biospecimen	section_thickness_value	Section Thickness Value	number		Collection and Processing	default			Numeric value to describe the thickness of a slice to tissue taken from a biospecimen, measured in microns (um).
+biospecimen	shipping_conditions	Shipping Conditions	string		Collection and Processing	default	biospecimen_shipping_conditions	value	Text descriptor of the shipping environment of a biospecimen.
+biospecimen	slicing_method	Slicing method	string		Imaging	default	biospecimen_slicing_method	value	The method by which the tissue was sliced.
+biospecimen	slide_charge_type	Slide Charge Type	string		Collection and Processing	default	biospecimen_slide_charge_type	value	A description of the charge on the glass slide.
+biospecimen	storage_method	Storage Method	string		Collection and Processing	default	biospecimen_storage_method	value	The method by which a biomaterial was stored after preservation or before another protocol was used.
+biospecimen	timepoint_label	Timepoint Label	string		Collection and Processing	default	biospecimen_timepoint_label	value	Label to identify the time point at which the biospecimen was obtained.
+biospecimen	tumor_infiltrating_lymphocytes	Tumor infiltrating lymphocytes	integer		Histologic Assessment	default			Number of tumor-infiltrating lymphocytes
+biospecimen	tumor_tissue_type	Tumor tissue type	string		Collection and Processing	default	biospecimen_tumor_tissue_type	value	Text that describes the kind of disease present in the tumor specimen as related to a specific time point.
+biospecimen_acquisition_method_type	value	Value	string	required	Controlled vocabulary				
+biospecimen_control	value	Value	string	required	Controlled vocabulary				
+biospecimen_degree_of_dysplasia	value	Value	string	required	Controlled vocabulary				
+biospecimen_fiducial_marker	value	Value	string	required	Controlled vocabulary				
+biospecimen_histology_assessment_medium	value	Value	string	required	Controlled vocabulary				
+biospecimen_histology_assessments_by	value	Value	string	required	Controlled vocabulary				
+biospecimen_mounting_medium	value	Value	string	required	Controlled vocabulary				
+biospecimen_preservation_method	value	Value	string	required	Controlled vocabulary				
+biospecimen_shipping_conditions	value	Value	string	required	Controlled vocabulary				
+biospecimen_slicing_method	value	Value	string	required	Controlled vocabulary				
+biospecimen_slide_charge_type	value	Value	string	required	Controlled vocabulary				
+biospecimen_storage_method	value	Value	string	required	Controlled vocabulary				
+biospecimen_timepoint_label	value	Value	string	required	Controlled vocabulary				
+biospecimen_tumor_tissue_type	value	Value	string	required	Controlled vocabulary				
+biospecimen_type	value	Value	string	required	Controlled vocabulary				
+cell	cell_state_level	Cell state level	boolean			default			Are cell types / states included?
+cell	comment	Comment	string			default			Free text field to use if necessary
+cell	commit_sha	Commit SHA	string			default			Short SHA for software version (8 hexadecimal characters for github)
+cell	data_file_id	Data File ID	string			default			unique e.g., “self” HTAN ID for data file described by this metadata
+cell	file_format	File Format	string			default	cell_file_format	value	format of data file
+cell	filename	Filename	string			default			name of data file as submitted to repository
+cell	fov_size_x	FOV Size X	number			default			FOV size in X-dimension (micron)
+cell	fov_size_y	FOV Size Y	number			default			FOV size in Y-dimension (micron)
+cell	header_size	Header size	integer			default			How many columns do have in the CSV / FCS
+cell	object_classes_description	Object classes description	string			default			Free text description of object class
+cell	object_classes_included	Object classes included	string			default	cell_object_classes_included	value	Defines which cell compartment this mask pertains or which tissue structure
+cell	parent_id	Parent ID	string			default			Parent Identifier from which the biospecimen was obtained. The parent could be another biospecimen or a research participant.
+cell	physical_size_x	Physical Size X	number			default			physical size of one pixel in x-dimension
+cell	physical_size_xunit	Physical Size XUnit	string			default			unit for PhysicalSizeX
+cell	physical_size_y	Physical Size Y	number			default			physical size of one pixel in y-dimension
+cell	physical_size_yunit	Physical Size YUnit	string			default			unit for PhysicalSizeY
+cell	physical_size_z	Physical Size Z	number			default			physical size of one pixel in Z-dimension
+cell	physical_size_zunit	Physical Size ZUnit	string			default			unit for PhysicalSizeZ
+cell	pyramid	Pyramid	boolean			default			whether or not image file contains a pyramid stack
+cell	software_and_version	Software and Version	string			default			method(s) and parameters used for any acquisition/ transformation/ processing to create this image
+cell	t_series	T series	boolean			default			whether or not image file contains a time series
+cell	type	Type	string			default			bit depth of image
+cell	z_stack	Z stack	boolean			default			whether or not image file contains a Z-stack
+cell_file_format	value	Value	string	required	Controlled vocabulary				
+cell_object_classes_included	value	Value	string	required	Controlled vocabulary				
+cell_state	algorithm_parameters	Algorithm parameters	string			default			Description of algorithm parameters
+cell_state	cell_type_clustering_calling_methods	Cell type clustering / calling methods	string			default			Methods used (connected to protocols.io) (for example PhenoGraph, k-means, etc.)
+cell_state	comment	Comment	string			default			Free text field to use if necessary
+cell_state	data_file_id	Data File ID	string			default			unique e.g., “self” HTAN ID for data file described by this metadata
+cell_state	file_format	File Format	string			default	cell_state_file_format	value	format of data file
+cell_state	filename	Filename	string			default			name of data file as submitted to repository
+cell_state	header_size	Header size	integer			default			How many columns do have in the CSV / FCS / hdf5
+cell_state	parent_id	Parent ID	string			default			Parent Identifier from which the biospecimen was obtained. The parent could be another biospecimen or a research participant.
+cell_state	possible_cell_type_states_format	Possible cell type / states format	string			default			A semicolon-delimited list of possible keywords that each cell will be annotated with
+cell_state	protocol_ids	Protocol ID(s)	string			default			unique identifier (e.g. protocols.io) -- may be a delimited list of identifiers
+cell_state	software_and_version	Software and Version	string			default			method(s) and parameters used for any acquisition/ transformation/ processing to create this image
+cell_state_file_format	value	Value	string	required	Controlled vocabulary				
+channel	antibody_name	Antibody Name	string			default			short descriptive name for this antibody
+channel	catalog_number	Catalog #	string			default			catalog number from vendor
+channel	channel_id	Channel ID	string			default			this must match the corresponding field in the OME-XML / TIFF header
+channel	channel_name	Channel Name	string			default			this must match the corresponding field in the OME-XML / TIFF header
+channel	clone	Clone	string			default			Unique clone identifier
+channel	comment	Comment	string			default			Free text field to use if necessary
+channel	concentration	Concentration	string			default			Final concentration used in experiment
+channel	cycle_number	Cycle Number	integer			default			the cycle # in which the co-listed reagent(s) was(were) used
+channel	dilution	Dilution	string			default			Final dilution ratio used in experiment
+channel	emission_bandwidth	Emission bandwidth	number			default			nominal width of emission spectrum (nm)
+channel	emission_wavelength	Emission wavelength	number			default			center/peak of the emission spectrum (nm)
+channel	excitation_bandwidth	Excitation bandwidth	number			default			nominal width of excitation spectrum (nm)
+channel	excitation_wavelength	Excitation wavelength	number			default			center/peak of the excitation spectrum (nm)
+channel	fluorophore	Fluorophore	string			default			Fluorescent dye label
+channel	lot	Lot	string			default			lot number from vendor
+channel	metal_isotope_element	Metal isotope: Element	string			default			Element abbreviation
+channel	metal_isotope_mass	Metal isotope: Mass	integer			default			Element mass number
+channel	oligo_barcode_lower_strand	Oligo barcode: lower strand	string			default			DNA barcode used for labeling
+channel	oligo_barcode_upper_strand	Oligo barcode: upper strand	string			default			DNA barcode used for labeling
+channel	passed_qc	Passed QC	boolean			default			Identify stains that did not pass QC but are included in the dataset.
+channel	qc_details	QC details	string			default			Comment on why QC failed
+channel	rrid_identifier	RRID identifier	string			default			Research Resource Identifier
+channel	sub_cycle_number	Sub Cycle #	integer			default			sub-cycle #
+channel	target_name	Target name	string			default			short descriptive name (abbreviation) for this target (antigen)
+channel	vendor	Vendor	string			default			Vendor name
+clinical	age_at_diagnosis	Age at diagnosis	integer		Diagnosis	default			Age at the time of diagnosis expressed in the number of days since birth.
+clinical	cause_of_death	Cause of death	string		Demographics	default	clinical_cause_of_death	value	Text term to identify the cause of death for a patient.
+clinical	classification_of_tumor	Classification of tumor	string		Diagnosis	default	clinical_classification_of_tumor	value	Text that describes the kind of disease present in the tumor specimen as related to a specific time point.
+clinical	days_to_death	Days to death	integer		Demographics	default			Age at the time of death expressed in the number of days since birth.
+clinical	days_to_follow_up	Days to follow up	number		Follow-Up	default			Number of days between the date of sample acquisition and the date of the patient's last follow-up appointment or contact.
+clinical	days_to_last_follow_up	Days to last follow up	integer		Diagnosis	default			Time interval from the date of last follow up to the date of initial pathologic diagnosis, represented as a calculated number of days.
+clinical	days_to_last_known_disease_status	Days to last known disease status	integer		Diagnosis	default			Time interval from the date of last follow up to the date of initial pathologic diagnosis, represented as a calculated number of days.
+clinical	days_to_progression	Days to progression	integer		Diagnosis	default			Number of days between the date of the patient’s first diagnosis and the date the patient's disease progressed.
+clinical	days_to_progression_free	Days to progression free	integer		Diagnosis	default			Number of days between the date used for index (DOB) and the date the patient’s disease was formally confirmed as progression-free.
+clinical	ethnicity	Ethnicity	string		Demographics	default	clinical_ethnicity	value	Text designations that identify ethnicity.
+clinical	gender	Gender	string		Demographics	default	clinical_gender	value	Text designations that identify gender.
+clinical	gene_symbol	Gene symbol	string		Canonical mutational information	default			The text term used to describe a gene targeted or included in molecular analysis. For rearrangements, this is should be used to represent the reference gene. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.
+clinical	hereditary_cancer_predisposition_syndrome	Hereditary cancer predisposition syndrome	string		Diagnosis	default	clinical_hereditary_cancer_predisposition_syndrome	value	Inherited genetic predisposition syndrome that confers heightened susceptibility to cancer in the patient.
+clinical	initial_disease_status	Initial disease status	string		Treatment	default	clinical_initial_disease_status	value	Text term used to describe the status of the patient’s malignancy when the treatment began.
+clinical	known_genetic_predisposition_mutation	Known genetic predisposition mutation	string		Diagnosis	default	clinical_known_genetic_predisposition_mutation	value	A yes/no/unknown indicator to identify whether there is a known genetic predisposition mutation present in the patient.
+clinical	last_known_disease_status	Last known disease status	string		Diagnosis	default	clinical_last_known_disease_status	value	Text term that describes the last known state or condition of an individual's neoplasm.
+clinical	lost_to_follow_up	Lost to follow up	string		Follow-Up	default	clinical_lost_to_follow_up	value	Yes/No/Unknown indicator to identify whether a patient was lost to follow up.
+clinical	molecular_analysis_method	Molecular analysis method	string		Canonical mutational information	default	clinical_molecular_analysis_method	value	The text term used to describe the method used for molecular analysis. Note: This node is meant to capture molecular tests that were completed clinically for the participant and only includes data from diagnostic array that was completed prior to research sequencing was done. Do not include data related to research assay outputs here.
+clinical	morphology	Morphology	string		Diagnosis	default	clinical_morphology	value	Histologic Morphology Code based on International Classification of Diseases 10th Edition.
+clinical	pack_years_smoked	Pack years smoked	number		Exposures	default			Numeric computed value to represent lifetime tobacco exposure defined as number of cigarettes smoked per day x number of years.
+clinical	participant_id	Participant ID	string			default			Participant Identifier
+clinical	primary_diagnosis	Primary diagnosis	string		Diagnosis	default	clinical_primary_diagnosis	value	Text term used to describe the patient's histologic diagnosis.
+clinical	prior_treatment	Prior treatment	string		Diagnosis	default	clinical_prior_treatment	value	Yes/no/unknown indicator related to the administration of therapeutic agents received before the body specimen was collected.
+clinical	progression_or_recurrence	Progression or recurrence	string		Diagnosis	default	clinical_progression_or_recurrence	value	Yes/No/Unknown indicator to identify whether a patient has had a new tumor event after initial treatment.
+clinical	race	Race	string		Demographics	default	clinical_race	value	Text designations that identify race.
+clinical	site_of_resection_or_biopsy	Site of resection or biopsy	string		Diagnosis	default	clinical_site_of_resection_or_biopsy	value	The text term used to describe the anatomic site of origin, of the patient's disease.
+clinical	species	Species	string			default	clinical_species	value	Text that identifies species of tissue sample.
+clinical	test_result	Test result	string		Canonical mutational information	default	clinical_test_result	value	The text term used to describe the result of the molecular test.
+clinical	therapeutic_agents	Therapeutic agents	string		Treatment	default			Text identification of the individual agents used as part of a treatment regimen.
+clinical	tissue_or_organ_of_origin	Tissue or organ of origin	string		Diagnosis	default	clinical_tissue_or_organ_of_origin	value	The text term used to describe the anatomic site of origin, of the patient's disease.
+clinical	treatment_type	Treatment type	string		Treatment	default	clinical_treatment_type	value	Text term that describes the kind of treatment administered.
+clinical	tumor_grade	Tumor grade	string		Diagnosis	default	clinical_tumor_grade	value	Numeric value to express the degree of abnormality of cancer cells, a measure of differentiation and aggressiveness.
+clinical	vital_status_at_last_follow_up	Vital status at last follow up	string		Demographics	default	clinical_vital_status_at_last_follow_up	value	The survival state of the person at the last follow up contact.
+clinical	year_of_death	Year of death	integer		Demographics	default			Numeric value to represent the year of the death of an individual.
+clinical	years_smoked	Years smoked	integer		Exposures	default			Numeric value to represent the number of years a person has been smoking.
+clinical_cause_of_death	value	Value	string	required	Controlled vocabulary				
+clinical_classification_of_tumor	value	Value	string	required	Controlled vocabulary				
+clinical_ethnicity	value	Value	string	required	Controlled vocabulary				
+clinical_gender	value	Value	string	required	Controlled vocabulary				
+clinical_hereditary_cancer_predisposition_syndrome	value	Value	string	required	Controlled vocabulary				
+clinical_initial_disease_status	value	Value	string	required	Controlled vocabulary				
+clinical_known_genetic_predisposition_mutation	value	Value	string	required	Controlled vocabulary				
+clinical_last_known_disease_status	value	Value	string	required	Controlled vocabulary				
+clinical_lost_to_follow_up	value	Value	string	required	Controlled vocabulary				
+clinical_molecular_analysis_method	value	Value	string	required	Controlled vocabulary				
+clinical_morphology	value	Value	string	required	Controlled vocabulary				
+clinical_primary_diagnosis	value	Value	string	required	Controlled vocabulary				
+clinical_prior_treatment	value	Value	string	required	Controlled vocabulary				
+clinical_progression_or_recurrence	value	Value	string	required	Controlled vocabulary				
+clinical_race	value	Value	string	required	Controlled vocabulary				
+clinical_site_of_resection_or_biopsy	value	Value	string	required	Controlled vocabulary				
+clinical_species	value	Value	string	required	Controlled vocabulary				
+clinical_test_result	value	Value	string	required	Controlled vocabulary				
+clinical_tissue_or_organ_of_origin	value	Value	string	required	Controlled vocabulary				
+clinical_treatment_type	value	Value	string	required	Controlled vocabulary				
+clinical_tumor_grade	value	Value	string	required	Controlled vocabulary				
+clinical_vital_status_at_last_follow_up	value	Value	string	required	Controlled vocabulary				
+file	acquisition_software	Acquisition software	string			default			method(s) and parameters used for any acquisition/ transformation/ processing to create this image
+file	assay_type	Assay Type	string			default	file_assay_type	value	method / technology used
+file	channel_level_metadata_csv_filename	Channel Level Metadata Csv Filename	string			default			“companion” CSV file containing channel-level metadata for multi-channel/multi-cyclic methods
+file	comment	Comment	string			default			Free text field to use if necessary
+file	data_file_id	Data File Id	string			default			unique e.g., “self” HTAN ID for data file described by this metadata
+file	file_format	File Format	string			default	file_format	value	format of data file
+file	filename	Filename	string			default			name of data file as submitted to repository
+file	fov_number	Fov Number	integer			default			Index of FOV (as it pertains to its place in the Experiment)
+file	fov_sizex	Fov Sizex	number			default			FOV size in X-dimension (micron)
+file	fov_sizey	Fov Sizey	number			default			FOV size in Y-dimension (micron)
+file	frame_averaging	Frame Averaging	integer			default			Number of frames averaged together (if no averaging, set to 1)
+file	image_acquisition_date	Image Acquisition Date	date			default			The date of image acquisition
+file	imaging_modality	Imaging modality	string			default	file_imaging_modality	value	imaging technology
+file	immersion_medium	Immersion Medium	string			default	file_immersion_medium	value	the imaging medium affects the working NA of the objective
+file	lens_na	Lens NA	number			default			lens numerical aperture
+file	microscope	Microscope	string			default			Microscope type (manufacturer, model, etc) used for this experiment
+file	nominal_magnification	Nominal Magnification	string			default	file_nominal_magnification	value	nominal optical magnification
+file	objective	Objective	string			default			objective lens used (descriptor or other identifier)
+file	protocol_ids	Protocol Id(S)	string			default			unique identifier (e.g. protocols.io) -- may be a delimited list of identifiers
+file	pyramid	Pyramid	boolean			default			whether or not image file contains a pyramid stack
+file	t_series	T Series	boolean			default			whether or not image file contains a time series
+file	working_distance	Working Distance	number			default			distance from objective to coverslip
+file	working_distance_unit	Working Distance Unit	number			default			default = microns
+file	z_stack	Z Stack	boolean			default			whether or not image file contains a Z-stack
+file_assay_type	value	Value	string	required	Controlled vocabulary				
+file_format	value	Value	string	required	Controlled vocabulary				
+file_imaging_modality	value	Value	string	required	Controlled vocabulary				
+file_immersion_medium	value	Value	string	required	Controlled vocabulary				
+file_nominal_magnification	value	Value	string	required	Controlled vocabulary				
+ome_tiff_header	channel_name	Channel Name	string			default			channel label for each channel in this image
+ome_tiff_header	comment	Comment	string			default			Free text field to use if necessary
+ome_tiff_header	dimension_order	Dimension Order	string			default			internal ordering of dimensions
+ome_tiff_header	image_id	Image ID	string			default			unique internal Image identifier
+ome_tiff_header	physical_size_x	Physical Size X	number			default			physical size of one pixel in x-dimension
+ome_tiff_header	physical_size_xunit	Physical Size XUnit	string			default			unit for PhysicalSizeX
+ome_tiff_header	physical_size_y	Physical Size Y	number			default			physical size of one pixel in y-dimension
+ome_tiff_header	physical_size_yunit	Physical Size YUnit	string			default			unit for PhysicalSizeY
+ome_tiff_header	physical_size_z	Physical Size Z	number			default			physical size of one pixel in z-dimension
+ome_tiff_header	physical_size_zunit	Physical Size ZUnit	string			default			unit for PhysicalSizeZ
+ome_tiff_header	pixels_big_endian	Pixels Big Endian	boolean			default			whether big endian byte order is used
+ome_tiff_header	plane_count	Plane Count	integer			default			total number of planes in this Image
+ome_tiff_header	size_c	Size C	integer			default			number of channels
+ome_tiff_header	size_t	Size T	integer			default			number of time-points
+ome_tiff_header	size_x	Size X	integer			default			number of pixels in x-dimension
+ome_tiff_header	size_y	Size Y	integer			default			number of pixels in y-dimension
+ome_tiff_header	size_z	Size Z	integer			default			number of z-planes
+ome_tiff_header	type	Type	string			default	ome_tiff_header_type	value	data type for each pixel value
+ome_tiff_header_type	value	Value	string	required	Controlled vocabulary				
+processed_data	comment	Comment	string			default			Free text field to use if necessary
+processed_data	commit_sha	Commit SHA	string			default			Short SHA for software version (8 hexadecimal characters for github)
+processed_data	data_file_id	Data File ID	string			default			unique e.g., “self” HTAN ID for data file described by this metadata
+processed_data	data_type	Data Type	string			default	processed_data_data_type	value	Specify if OME-TIFF provided is a segmentation mask or QC-checked image
+processed_data	file_format	File Format	string			default			format of data file
+processed_data	filename	Filename	string			default			name of data file as submitted to repository
+processed_data	fov_number	FOV number	integer			default			Index of FOV (as it pertains to its place in the Experiment)
+processed_data	fov_size_x	FOV Size X	number			default			FOV size in X-dimension (micron)
+processed_data	fov_size_y	FOV Size Y	number			default			FOV size in Y-dimension (micron)
+processed_data	maximum_intensity_display_range	Maximum Intensity Display Range	integer			default			Upper-bound intensity value
+processed_data	minimum_intensity_display_range	Minimum Intensity Display Range	integer			default			Lower-bound intensity value
+processed_data	object_class	Object class	string			default	processed_data_object_class	value	Defines if the mask delineates nucleus, the cytoplasm, plasma membrane, the whole cell or other
+processed_data	object_class_description	Object class Description	string			default			Free text description of object class
+processed_data	parent_data_file_id	Parent Data File ID	string			default			HTAN ID of Data File from which this Data File was derived
+processed_data	passed_qc	Passed QC	boolean			default			did all masks pass QC
+processed_data	physical_size_x	Physical Size X	number			default			physical size of one pixel in x-dimension
+processed_data	physical_size_xunit	Physical Size XUnit	string			default			unit for PhysicalSizeX
+processed_data	physical_size_y	Physical Size Y	number			default			physical size of one pixel in y-dimension
+processed_data	physical_size_yunit	Physical Size YUnit	string			default			unit for PhysicalSizeY
+processed_data	physical_size_z	Physical Size Z	number			default			physical size of one pixel in z-dimension
+processed_data	physical_size_zunit	Physical Size ZUnit	string			default			unit for PhysicalSizeZ
+processed_data	protocol_ids	Protocol ID(s)	string			default			unique identifier (e.g. protocols.io) -- may be a delimited list of identifiers
+processed_data	pyramid	Pyramid	boolean			default			whether or not image file contains a pyramid stack
+processed_data	software_and_version	Software and Version	string			default			method(s) and parameters used for any quality control, transformation, and visualization to create this image
+processed_data	t_series	T series	boolean			default			whether or not image file contains a time series
+processed_data	type	Type	string			default			data type for each pixel value
+processed_data	z_stack	Z stack	boolean			default			whether or not image file contains a Z-stack
+processed_data_data_type	value	Value	string	required	Controlled vocabulary				
+processed_data_object_class	value	Value	string	required	Controlled vocabulary				
