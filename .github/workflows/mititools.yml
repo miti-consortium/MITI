@@ -1,7 +1,10 @@
 name: Build representations with MITI tools
 
 on:
-  pull_request:
+  workflow_dispatch:
+  push:
+    branches:
+      - main
     paths:
       - 'yaml/**'
 
@@ -10,8 +13,6 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
-        with:
-          persist-credentials: false
       - uses: actions/setup-python@v2
         with:
           python-version: '3.x'
@@ -22,6 +23,7 @@ jobs:
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
         with:
-          branch: ${{ github.head_ref }}
-          author: "Automated Action <email@domain.auto>"
+          title: "Automated representation builds"
+          body: "Automated representation conversions generated with MITI tools"
+          branch: "mititools"
           commit-message: "Automated representation builds"
