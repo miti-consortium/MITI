@@ -11,10 +11,6 @@ jobs:
     env:
       ZIP: 'miti_${{ github.ref_name }}.zip'
     steps:
-      - name: Compose the .zip filename
-        id: zip-fn
-        run: |
-          echo "::set-output zip=tag::${{ github.repository }}:${tag%"_scope2screen"}
       - uses: actions/checkout@v2
       - uses: actions/setup-python@v2
         with:
