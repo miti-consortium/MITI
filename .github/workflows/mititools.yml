@@ -3,9 +3,7 @@ name: Build representations with MITI tools
 on:
   push:
     tags:        
-      - v'*'
-    branches:
-      - main
+      - v*
 
 jobs:
   tools:
