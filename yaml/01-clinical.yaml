@@ -3918,7 +3918,7 @@ Lost to follow up:
   category: Follow-Up
   type: string
   valid-values:
-  - Yes
-  - No
+  - 'Yes'
+  - 'No'
   - Unknown
   significance: recommended
