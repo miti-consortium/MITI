@@ -82,7 +82,7 @@ Working Distance:
   significance: recommended
 Working Distance Unit:
   description: default = microns
-  type: float
+  type: string
   significance: recommended
 Immersion Medium:
   description: the imaging medium affects the working NA of the objective

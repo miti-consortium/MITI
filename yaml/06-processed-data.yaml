@@ -39,7 +39,7 @@ Passed QC:
   description: did all masks pass QC
   type: boolean
   significance: 
-    required: Data type == ‘image’
+    required: Data type == 'image'
 Comment:
   description: Free text field to use if necessary
   type: string

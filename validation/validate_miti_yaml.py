@@ -36,7 +36,7 @@ def main():
 
     errors = list(filter(lambda c: c[1] == False, check))
     if (len(errors) > 0):
-        print("Validation errors found in " + os.path.basename + ": " +str(len(errors)))
+        print("Validation errors found in " + os.path.basename(input_yaml) + ": " +str(len(errors)))
         print(errors)
         sys.exit(1)
     else:
