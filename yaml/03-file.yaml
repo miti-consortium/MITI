@@ -48,6 +48,48 @@ Protocol Id(S):
     identifiers
   type: doi
   significance: required
+Antigen Retrieval Method:
+  description: Method used to unmask epitopes before antibody staining. Heat-induced
+    epitope retrieval (HIER) heats sections in a buffer; protease-induced epitope
+    retrieval (PIER) digests them with an enzyme.
+  type: string
+  valid-values:
+  - Heat-induced epitope retrieval (HIER)
+  - Protease-induced epitope retrieval (PIER)
+  - HIER and PIER
+  - None
+  - Not applicable
+  significance: recommended
+Antigen Retrieval Solution:
+  description: Buffer or enzyme solution used for antigen retrieval, with its concentration
+    where known (e.g. 10 mM sodium citrate; 10 mM Tris, 1 mM EDTA; proteinase K)
+  type: string
+  significance: recommended
+Antigen Retrieval pH:
+  description: pH of the antigen retrieval solution
+  type: float
+  significance: recommended
+Antigen Retrieval Heating Device:
+  description: Device used to heat sections for heat-induced epitope retrieval
+  type: string
+  valid-values:
+  - Pressure cooker
+  - Steamer
+  - Microwave oven
+  - Water bath
+  - Automated stainer
+  - Other
+  - Not applicable
+  significance: recommended
+Antigen Retrieval Temperature:
+  description: Temperature of the antigen retrieval step, in degrees Celsius
+  type: float
+  significance: recommended
+Antigen Retrieval Duration:
+  description: Time held at the antigen retrieval temperature, in minutes, not counting
+    heating up or cooling down
+  type: integer
+  significance: recommended
 Acquisition software:
   description: method(s) and parameters used for any acquisition/ transformation/
     processing to create this image
